@@ -1,0 +1,84 @@
+---
+title: "Biography card"
+subtitle: "Template"
+author: "Ardalan Mirshani"
+date: "09-10-2020"
+output: 
+  html_document
+---
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+.bio-title {
+  font-size: 32px;
+  color: #2E4A62;
+  font-weight: bold;
+}
+
+.bio-subtitle {
+  font-size: 16px;
+  color: #808080;
+}
+
+.bio-author {
+  font-size: 12px;
+  color: #808080;
+}
+
+.bio-date {
+  font-size: 11px;
+  color: #808080;
+}
+
+.bio-button {
+  font-size: 12px;
+  color: #808080;
+  font-family: 'Mulish', sans-serif;
+  background-color: rgb(233,233,230, .5);
+  border: none;
+  color: #d06eca;
+  font-weight: bold;
+  
+}
+
+.bio-back {
+  line-height: 200%;
+  font-family: 'Mulish', sans-serif;
+}
+
+.left-column {
+  float: left;
+  width: 75%;
+}
+
+.right-column {
+  float: left;
+  width: 20%;
+  padding: 5px 0px;
+  line-height: 1.8em;
+}
+
+.row {
+  display: flex;
+}
+
+</style>
+
+<div class="bio-back">
+<div class="row">
+<div class="left-column">
+<span class="bio-title"> `r params$title`:</span>
+<br>
+<span class="bio-subtitle"> `r params$subtitle` </span>
+</div>
+<div class="right-column">
+<span class="bio-author"> `r params$author` </span>
+<br>
+<span class="bio-author"> `r params$date`</span> 
+<br>
+<button class="bio-button"> `r params$categories` </button>
+</div>
+</div>
+</div>

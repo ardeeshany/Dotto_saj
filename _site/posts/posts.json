@@ -1,8 +1,8 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to Data Motto",
-    "description": "Welcome to our new blog, Data Motto. We hope you enjoy \nreading what we have to say!",
+    "path": "posts/Python/2020-12-30-new-york-taxi-fare-rate/",
+    "title": "New York Taxi fare rate",
+    "description": "A short description of the post.",
     "author": [
       {
         "name": "Nora Jones",
@@ -11,9 +11,43 @@
     ],
     "date": "2020-12-30",
     "categories": [],
-    "contents": "\n\n\n\n",
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2020-12-30T01:22:07-05:00",
+    "last_modified": "2020-12-30T01:42:55-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/R/2020-12-30-analyzing-covid19-in-usa/",
+    "title": "Analyzing COVID19 in USA",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-12-30",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-30T02:47:11-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/R/2020-12-30-how-to-fix-column-names/",
+    "title": "How to fix column names",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-12-30",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-30T01:37:45-05:00",
     "input_file": {}
   }
 ]

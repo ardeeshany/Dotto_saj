@@ -1,12 +1,22 @@
 name: "Datamotto"
 title: "Data Motto"
-description: |
-  Data Motto
+description: "Data Motto"
 output_dir: "_site"
+base_url: "https://www.datamotto.com"
+creative_commons: CC BY-NC
 navbar:
+  logo:
+    image: logo.gif
+    href: https://www.datamotto.com
   right:
-    - text: "Home"
+    - text: "All"
       href: index.html
+    - text: "R"
+      href: R.html
+    - text: "Python"
+      href: Python.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+output:
+  distill::distill_article:
+    toc: true

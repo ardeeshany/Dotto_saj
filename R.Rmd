@@ -1,0 +1,8 @@
+---
+title: R Posts
+site: distill::distill_website
+listing:
+  posts:
+   - R/2020-12-30-analyzing-covid19-in-usa
+   - R/2020-12-30-how-to-fix-column-names
+---
