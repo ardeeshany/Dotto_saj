@@ -71,10 +71,10 @@ output:
 <div class="left-column">
 <span class="bio-title"> `r params$title`:</span>
 <br>
-<span class="bio-subtitle"> `r params$subtitle` </span>
+<span class="bio-subtitle"> `r params$description` </span>
 </div>
 <div class="right-column">
-<span class="bio-author"> `r params$author` </span>
+<span class="bio-author"> `r unlist(params$author)['name']` </span>
 <br>
 <span class="bio-author"> `r params$date`</span> 
 <br>

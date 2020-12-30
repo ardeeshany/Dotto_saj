@@ -9,15 +9,59 @@ date: 12-30-2020
 output:
   distill::distill_article:
     self_contained: false
+categories:
+  - ggplot2
 ---
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r set-params, include=FALSE}
+params <- rmarkdown::metadata
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+```{r panelset, echo=FALSE}
+library(emo)
+library(here)
+xaringanExtra::use_panelset()
+```
+
+```{css}
+d-title, d-byline {
+  display: none;
+}
+
+d-article {
+  padding-top: 0.5rem;
+  rid-column-gap: -10px;
+}
+```
+
+<br> <br> <br> <br>
+
+```{r, child= here::here("_assets", "bio_header.Rmd")}
+```
 
 
+::: {.panelset}
+::: {.panel}
+# Problem
+
+<!-- LikeBtn.com BEGIN -->
+
+```{=html}
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+```
+<!-- LikeBtn.com END -->
+:::
+
+::: {.panel}
+:::
+
+::: {.panel}
+#### `theme.css` snippet `r emo::ji("clock")`
+
+```{r, layout="l-body-outset"}
+library(rmarkdown)
+paged_table(mtcars)
+```
+:::
+:::

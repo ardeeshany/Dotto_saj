@@ -20,3 +20,4 @@ navbar:
 output:
   distill::distill_article:
     toc: true
+    css: mystyle.css
