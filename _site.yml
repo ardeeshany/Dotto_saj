@@ -6,6 +6,7 @@ description: |
 output_dir: "_site"
 base_url: https://www.datamotto.com
 creative_commons: CC BY-NC
+favicon: images/logo.png
 collections:
   posts:
     categories: true
@@ -13,8 +14,9 @@ collections:
     authors_metadata: true
     feed_items_max: 20
     citations: false
-    share: [twitter, linkedin, facebook]
+    share: [twitter, linkedin] # facebook
     subscribe: _subscribe.html
+    custom: custom.html
     # disqus:
     #   shortname: reproducible-finance-with-r
     #   hidden: false
@@ -25,7 +27,7 @@ rss:
     # - forecasting
 navbar:
   logo:
-    image: logo.gif
+    image: images/logo.gif
     href: https://www.datamotto.com
   search: false
   source_url: https://github.com/ardeeshany/DataMotto

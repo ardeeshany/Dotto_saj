@@ -89,6 +89,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"/>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -1789,11 +1790,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 15px;
     font-family: "Noto Serif JP";
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: CamelCase;
   }
 
   .distill-site-header .logo img{
-    max-height: 50px; /* Makes logo bigger, default was 20px */
+    max-height: 40px; /* Makes logo bigger, default was 20px */
+    padding: -5px;
   }
 
   /* dropdown navbar color on mobile */
@@ -1810,7 +1812,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .distill-site-header a { /* A normal link in navbar */
     color: #1f1f1f;
-    display: inline-block; /* This line and line below is so pseudo-element will work later */
+    display: inline-block;  /* This line and line below is so pseudo-element will work later */
     position: relative;
     text-decoration: none;
     padding-left: 0px; /* overrides default so animation looks Ok */
@@ -1820,7 +1822,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   .distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
-    color: #787878;
+    color: #ca225e;
     padding-left: 0px; /* overrides default so animation looks Ok */
     padding-right: 0px; /* overrides default so animation looks Ok */
     margin: 10px 14px; /* replaces default padding values for margin values */
@@ -1829,12 +1831,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .distill-site-header a:before { /*Creates pseudoelement line under link */
     background-color: #787878;
     content: '';
-    height: 1px;
+    /* height: 1px;*/
     position: absolute;
-    bottom: -1px;
-    transition: width 0.3s ease-in-out; /* animate the width */
+    /* bottom: -1px;
+    /*transition: width 0.3s ease-in-out; /* animate the width */
     width: 100%;
   }
+
+  .distill-site-header a:after{ /*Creates pseudoelement line under link */
+    background-color: #ca225e;
+    content: '';
+    /* height: 1px;*/
+    position: absolute;
+    /* bottom: -1px;
+    /*transition: width 0.3s ease-in-out; /* animate the width */
+    width: 100%;
+  }
+
 
   .distill-site-header a:hover:before {
     width: 0; /* Shrinks width of pseudoelement to 0 when hovered */
@@ -1956,7 +1969,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://www.datamotto.com">
-<img src="logo.gif" alt="Logo"/>
+<img src="images/logo.gif" alt="Logo"/>
 </a>
 <a href="index.html" class="title">Data Motto</a>
 </div>

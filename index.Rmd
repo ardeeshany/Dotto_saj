@@ -1,5 +1,5 @@
 ---
-title: "Data Motto"
+title: ""
 site: distill::distill_website
 listing: posts
 ---

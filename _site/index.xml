@@ -7,6 +7,11 @@
     <description>A web platform to create high quality summary of
 experiencing with Data!
 </description>
+    <image>
+      <title>Data Motto</title>
+      <url>https://www.datamotto.com/images/logo.png</url>
+      <link>https://www.datamotto.com</link>
+    </image>
     <generator>Distill</generator>
     <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     <item>

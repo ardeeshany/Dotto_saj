@@ -39,11 +39,12 @@ d-article h2 {
   font-size: 15px;
   font-family: "Noto Serif JP";
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: CamelCase;
 }
 
 .distill-site-header .logo img{
-  max-height: 50px; /* Makes logo bigger, default was 20px */
+  max-height: 40px; /* Makes logo bigger, default was 20px */
+  padding: -5px;
 }
 
 /* dropdown navbar color on mobile */
@@ -60,7 +61,7 @@ d-article h2 {
 
 .distill-site-header a { /* A normal link in navbar */
   color: #1f1f1f;
-  display: inline-block; /* This line and line below is so pseudo-element will work later */
+  display: inline-block;  /* This line and line below is so pseudo-element will work later */
   position: relative;
   text-decoration: none;
   padding-left: 0px; /* overrides default so animation looks Ok */
@@ -70,7 +71,7 @@ d-article h2 {
 
 
 .distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
-  color: #787878;
+  color: #ca225e;
   padding-left: 0px; /* overrides default so animation looks Ok */
   padding-right: 0px; /* overrides default so animation looks Ok */
   margin: 10px 14px; /* replaces default padding values for margin values */
@@ -79,12 +80,23 @@ d-article h2 {
 .distill-site-header a:before { /*Creates pseudoelement line under link */
   background-color: #787878;
   content: '';
-  height: 1px;
+  /* height: 1px;*/
   position: absolute;
-  bottom: -1px;
-  transition: width 0.3s ease-in-out; /* animate the width */
+  /* bottom: -1px;
+  /*transition: width 0.3s ease-in-out; /* animate the width */
   width: 100%;
 }
+
+.distill-site-header a:after{ /*Creates pseudoelement line under link */
+  background-color: #ca225e;
+  content: '';
+  /* height: 1px;*/
+  position: absolute;
+  /* bottom: -1px;
+  /*transition: width 0.3s ease-in-out; /* animate the width */
+  width: 100%;
+}
+
 
 .distill-site-header a:hover:before {
   width: 0; /* Shrinks width of pseudoelement to 0 when hovered */

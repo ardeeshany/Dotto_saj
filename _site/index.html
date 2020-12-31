@@ -86,27 +86,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Data Motto</title>
+  <title>Data Motto: </title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"/>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Data Motto"/>
+  <meta property="og:title" content="Data Motto: "/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Data Motto"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Data Motto"/>
+  <meta property="twitter:title" content="Data Motto: "/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Data Motto"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1790,11 +1791,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 15px;
     font-family: "Noto Serif JP";
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: CamelCase;
   }
 
   .distill-site-header .logo img{
-    max-height: 50px; /* Makes logo bigger, default was 20px */
+    max-height: 40px; /* Makes logo bigger, default was 20px */
+    padding: -5px;
   }
 
   /* dropdown navbar color on mobile */
@@ -1811,7 +1813,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .distill-site-header a { /* A normal link in navbar */
     color: #1f1f1f;
-    display: inline-block; /* This line and line below is so pseudo-element will work later */
+    display: inline-block;  /* This line and line below is so pseudo-element will work later */
     position: relative;
     text-decoration: none;
     padding-left: 0px; /* overrides default so animation looks Ok */
@@ -1821,7 +1823,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   .distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
-    color: #787878;
+    color: #ca225e;
     padding-left: 0px; /* overrides default so animation looks Ok */
     padding-right: 0px; /* overrides default so animation looks Ok */
     margin: 10px 14px; /* replaces default padding values for margin values */
@@ -1830,12 +1832,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .distill-site-header a:before { /*Creates pseudoelement line under link */
     background-color: #787878;
     content: '';
-    height: 1px;
+    /* height: 1px;*/
     position: absolute;
-    bottom: -1px;
-    transition: width 0.3s ease-in-out; /* animate the width */
+    /* bottom: -1px;
+    /*transition: width 0.3s ease-in-out; /* animate the width */
     width: 100%;
   }
+
+  .distill-site-header a:after{ /*Creates pseudoelement line under link */
+    background-color: #ca225e;
+    content: '';
+    /* height: 1px;*/
+    position: absolute;
+    /* bottom: -1px;
+    /*transition: width 0.3s ease-in-out; /* animate the width */
+    width: 100%;
+  }
+
 
   .distill-site-header a:hover:before {
     width: 0; /* Shrinks width of pseudoelement to 0 when hovered */
@@ -1948,7 +1961,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Data Motto","authors":[]}
+{"title":"","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1957,7 +1970,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://www.datamotto.com">
-<img src="logo.gif" alt="Logo"/>
+<img src="images/logo.gif" alt="Logo"/>
 </a>
 <a href="index.html" class="title">Data Motto</a>
 </div>
@@ -2113,7 +2126,7 @@ function init_posts_list() {
 
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Data Motto">Data Motto</h1>
+<h1 class="posts-list-caption" data-caption=""></h1>
 <a href="posts/Python/2020-12-30-new-york-taxi-fare-rate/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
@@ -2188,10 +2201,16 @@ function init_posts_list() {
 </a>
 </div>
 <div class="posts-sidebar">
+<div><div>
+Follow <span style="color: #005678">Data Motto</span> on
+<a href="https://twitter.com/DataMotto" class="fa fa-twitter" style="color: #55ACEE; font-size:15px; padding: .5em;"></a> & <a href="https://www.linkedin.com/company/datamotto" class="fa fa-linkedin" style="color: #007bb5; font-size:15px; padding: .5em;"></a>
+</div>
+<br>
+</div>
 <div class="sidebar-section subscribe">
 <h3>Subscribe</h3>
 <form method='post' action='https://blogtrottr.com'>
-  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <p>Get notified of new posts via email:</p>
   <input type='text' name='btr_email' />
   <input type='hidden' name='btr_url'
          value='https://datamotto.com/index.xml'/>
@@ -2225,7 +2244,7 @@ function init_posts_list() {
 <!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Data Motto</h1>
+<h1>index.utf8</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 

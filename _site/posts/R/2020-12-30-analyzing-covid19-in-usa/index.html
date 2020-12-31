@@ -91,6 +91,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <link rel="canonical" href="https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa/"/>
 <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"/>
+<link rel="icon" type="image/png" href="../../../images/logo.png"/>
 
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2020-12-30"/>
@@ -1808,11 +1809,12 @@ d-article h2 {
   font-size: 15px;
   font-family: "Noto Serif JP";
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: CamelCase;
 }
 
 .distill-site-header .logo img{
-  max-height: 50px; /* Makes logo bigger, default was 20px */
+  max-height: 40px; /* Makes logo bigger, default was 20px */
+  padding: -5px;
 }
 
 /* dropdown navbar color on mobile */
@@ -1829,7 +1831,7 @@ d-article h2 {
 
 .distill-site-header a { /* A normal link in navbar */
   color: #1f1f1f;
-  display: inline-block; /* This line and line below is so pseudo-element will work later */
+  display: inline-block;  /* This line and line below is so pseudo-element will work later */
   position: relative;
   text-decoration: none;
   padding-left: 0px; /* overrides default so animation looks Ok */
@@ -1839,7 +1841,7 @@ d-article h2 {
 
 
 .distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
-  color: #787878;
+  color: #ca225e;
   padding-left: 0px; /* overrides default so animation looks Ok */
   padding-right: 0px; /* overrides default so animation looks Ok */
   margin: 10px 14px; /* replaces default padding values for margin values */
@@ -1848,12 +1850,23 @@ d-article h2 {
 .distill-site-header a:before { /*Creates pseudoelement line under link */
   background-color: #787878;
   content: '';
-  height: 1px;
+  /* height: 1px;*/
   position: absolute;
-  bottom: -1px;
-  transition: width 0.3s ease-in-out; /* animate the width */
+  /* bottom: -1px;
+  /*transition: width 0.3s ease-in-out; /* animate the width */
   width: 100%;
 }
+
+.distill-site-header a:after{ /*Creates pseudoelement line under link */
+  background-color: #ca225e;
+  content: '';
+  /* height: 1px;*/
+  position: absolute;
+  /* bottom: -1px;
+  /*transition: width 0.3s ease-in-out; /* animate the width */
+  width: 100%;
+}
+
 
 .distill-site-header a:hover:before {
   width: 0; /* Shrinks width of pseudoelement to 0 when hovered */
@@ -1974,7 +1987,7 @@ d-article ul > li { /*to add back in space between bullet items that I took away
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://www.datamotto.com">
-<img src="../../../logo.gif" alt="Logo"/>
+<img src="../../../images/logo.gif" alt="Logo"/>
 </a>
 <a href="../../../index.html" class="title">Data Motto</a>
 </div>
@@ -2132,14 +2145,11 @@ d-article {
       <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.datamotto.com%2Fposts%2FR%2F2020-12-30-analyzing-covid19-in-usa%2F&amp;title=Analyzing%20COVID19%20in%20USA">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fwww.datamotto.com%2Fposts%2FR%2F2020-12-30-analyzing-covid19-in-usa%2F">
-        <i class="fab fa-facebook"></i>
-      </a>
     </span>
   </p>
   <p>
     <div class="subscribe"><form method='post' action='https://blogtrottr.com'>
-  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <p>Get notified of new posts via email:</p>
   <input type='text' name='btr_email' />
   <input type='hidden' name='btr_url'
          value='https://datamotto.com/index.xml'/>
