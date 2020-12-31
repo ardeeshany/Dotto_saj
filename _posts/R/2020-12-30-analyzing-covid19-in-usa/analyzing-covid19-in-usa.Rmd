@@ -11,6 +11,7 @@ output:
     self_contained: false
 categories:
   - ggplot2
+# preview: images/sharpe-ratio.png
 ---
 
 ```{r set-params, include=FALSE}
