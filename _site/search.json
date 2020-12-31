@@ -6,28 +6,28 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-30T22:54:06-05:00"
+      "last_modified": "2020-12-30T23:06:00-05:00"
     },
     {
       "path": "index.html",
       "title": "Data Motto",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-30T23:00:29-05:00"
+      "last_modified": "2020-12-30T23:06:01-05:00"
     },
     {
       "path": "Python.html",
       "title": "Python Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-30T22:54:07-05:00"
+      "last_modified": "2020-12-30T23:06:01-05:00"
     },
     {
       "path": "R.html",
       "title": "R Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-30T22:54:08-05:00"
+      "last_modified": "2020-12-30T23:06:02-05:00"
     }
   ],
   "collections": ["posts/posts.json"]

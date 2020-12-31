@@ -1,7 +1,7 @@
 ---
 title: "Analyzing COVID19 in USA"
 description: |
-  A short description of the post.
+  Analyzing Covid 19 reports
 author:
   - name: Nora Jones
     url: https://example.com/norajones
