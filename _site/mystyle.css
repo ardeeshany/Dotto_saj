@@ -39,7 +39,7 @@ d-article h2 {
   font-size: 15px;
   font-family: "Noto Serif JP";
   letter-spacing: 2px;
-  text-transform: CamelCase;
+  text-transform: uppercase;
 }
 
 .distill-site-header .logo img{

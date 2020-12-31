@@ -7,6 +7,7 @@ output_dir: "_site"
 base_url: https://www.datamotto.com
 creative_commons: CC BY-NC
 favicon: images/logo.png
+google_analytics: "G-WZMEMQM0Y2"
 collections:
   posts:
     categories: true
@@ -25,6 +26,8 @@ rss:
     # categories:   # to create dedicated feeds that map to particular categories
     # - portfolios
     # - forecasting
+twitter:
+  site: "@DataMotto"
 navbar:
   logo:
     image: images/logo.gif
