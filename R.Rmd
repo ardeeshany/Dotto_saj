@@ -1,5 +1,5 @@
 ---
-title: R Posts
+title: "R Dottos:"
 site: distill::distill_website
 listing:
   posts:

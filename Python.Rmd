@@ -1,5 +1,5 @@
 ---
-title: Python Posts
+title: "Python Dottos:"
 site: distill::distill_website
 listing:
   posts:

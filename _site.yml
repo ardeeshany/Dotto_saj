@@ -17,7 +17,7 @@ collections:
     citations: false
     share: [twitter, linkedin] # facebook
     subscribe: _subscribe.html
-    custom: custom.html
+    # custom: custom.html
     # disqus:
     #   shortname: reproducible-finance-with-r
     #   hidden: false
