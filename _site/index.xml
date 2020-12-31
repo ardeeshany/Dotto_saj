@@ -19,6 +19,16 @@ experiencing with Data!
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>The relation between Fast-food and obesity</title>
+      <dc:creator>Ardalan Mirshani</dc:creator>
+      <link>https://www.datamotto.com/posts/Python/2020-12-30-the-relation-between-fast-food-and-obesity</link>
+      <description>&lt;p&gt;This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.&lt;/p&gt;
+</description>
+      <category>matplotlib</category>
+      <guid>https://www.datamotto.com/posts/Python/2020-12-30-the-relation-between-fast-food-and-obesity</guid>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Analyzing COVID19 in USA</title>
       <dc:creator>Nora Jones</dc:creator>
       <link>https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa</link>

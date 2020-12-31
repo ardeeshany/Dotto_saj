@@ -17,6 +17,25 @@
     "input_file": {}
   },
   {
+    "path": "posts/Python/2020-12-30-the-relation-between-fast-food-and-obesity/",
+    "title": "The relation between Fast-food and obesity",
+    "description": "This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.",
+    "author": [
+      {
+        "name": "Ardalan Mirshani",
+        "url": {}
+      }
+    ],
+    "date": "2020-12-30",
+    "categories": [
+      "matplotlib"
+    ],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-30T23:16:00-05:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/R/2020-12-30-analyzing-covid19-in-usa/",
     "title": "Analyzing COVID19 in USA",
     "description": "Analyzing Covid 19 reports",

@@ -85,377 +85,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Data Motto: Python Posts</title>
+  <title>The relation between Fast-food and obesity</title>
+
+  <meta property="description" itemprop="description" content="This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe."/>
 
 
-  <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"/>
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-12-30"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-12-30"/>
+  <meta name="article:author" content="Ardalan Mirshani"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Data Motto: Python Posts"/>
+  <meta property="og:title" content="The relation between Fast-food and obesity"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Data Motto"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Data Motto: Python Posts"/>
+  <meta property="twitter:title" content="The relation between Fast-food and obesity"/>
+  <meta property="twitter:description" content="This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Python Posts"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"character","attributes":{},"value":["Python/2020-12-30-new-york-taxi-fare-rate","Python/2020-12-30-the-relation-between-fast-food-and-obesity"]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories"]}},"value":[{"type":"character","attributes":{},"value":["The relation between Fast-food and obesity"]},{"type":"character","attributes":{},"value":["This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Ardalan Mirshani"]}]}]},{"type":"character","attributes":{},"value":["12-30-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["matplotlib"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"NULL"}
   </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -1741,445 +1403,52 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.6.4/header-attrs.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="the-relation-between-fast-food-and-obesity_files/header-attrs-2.6.4/header-attrs.js"></script>
+  <script src="the-relation-between-fast-food-and-obesity_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="the-relation-between-fast-food-and-obesity_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="the-relation-between-fast-food-and-obesity_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="the-relation-between-fast-food-and-obesity_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="the-relation-between-fast-food-and-obesity_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:300, 300i&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
-
-  body {
-    font-family: "Lato";
-    /*color: #1f1f1f;*/
-    color: #404040;
-    font-size: 16px;
-  }
-
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Serif JP";
-    letter-spacing: 2px;
-    line-height: 2rem; /* increases, so wrapping headers don't overlap */
-    color: #ca225e;
-    font-weight: 300;
-  }
-
-  d-title {
-    padding-top: 13rem; /*so that navbar doesn't overlap fixed title */
-  }
-
-  d-title h1,
-  d-article h2 {
-  	font-weight: 300;
-  }
-
-
-  /* --------------Navbar-------------------- */
-
-
-  /* background-image for fade-to-white color of navbar */
-  .distill-site-header{
-    padding: 5px 0px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0));
-    background-color: transparent;
-    font-size: 15px;
-    font-family: "Noto Serif JP";
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  .distill-site-header .logo img{
-    max-height: 50px; /* Makes logo bigger, default was 20px */
-  }
-
-  /* dropdown navbar color on mobile */
-
-  @media screen and (max-width: 768px){
-    .distill-site-header.responsive {
-        background: rgba(255,255,255,0.99);
-    }
-  }
-
-
-  /* Navbar Links with Animated Hover */
-
-
-  .distill-site-header a { /* A normal link in navbar */
-    color: #1f1f1f;
-    display: inline-block; /* This line and line below is so pseudo-element will work later */
-    position: relative;
-    text-decoration: none;
-    padding-left: 0px; /* overrides default so animation looks Ok */
-    padding-right: 0px; /* overrides default so animation looks Ok */
-    margin: 10px 14px; /* replaces default padding values for margin values */
-  }
-
-
-  .distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
-    color: #787878;
-    padding-left: 0px; /* overrides default so animation looks Ok */
-    padding-right: 0px; /* overrides default so animation looks Ok */
-    margin: 10px 14px; /* replaces default padding values for margin values */
-  }
-
-  .distill-site-header a:before { /*Creates pseudoelement line under link */
-    background-color: #787878;
-    content: '';
-    height: 1px;
-    position: absolute;
-    bottom: -1px;
-    transition: width 0.3s ease-in-out; /* animate the width */
-    width: 100%;
-  }
-
-  .distill-site-header a:hover:before {
-    width: 0; /* Shrinks width of pseudoelement to 0 when hovered */
-  }
-
-  /* Makes sure animation does NOT apply to Title or Logo links (or toggle on mobile) */
-
-  .distill-site-header a.title:before, .distill-site-nav a.logo:before, a.nav-toggle:before {
-    display: none;
-  }
-
-  .distill-site-header a.title, .distill-site-nav a.logo {
-    padding: 10px 0px;
-    margin: 10px 14px;
-  }
-
-
-  /* No navbar links on mobile except title and nav-toggle */
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown {
-      display: none;
-    }
-
-    .distill-site-header a.title, .distill-site-header a.nav-toggle {
-      display: inline-block;
-      padding: 10px 0px;
-      margin: 10px 14px;
-    }
-  }
-
-  /* -------------Appendix---------------- */
-
-  d-appendix {
-    background-color: #fdf7f9;
-    border-top: none !important;
-    color: #1a162d !important;
-  }
-
-  /* -------------Footer------------------*/
-
-  .distill-site-footer {
-    color: #7e7b88;
-    background-color: #ca225e3d;
-    margin-top: 0px;
-    padding: 50px 20px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 12px;
-
-  }
-
-  d-byline div.byline.grid div p,
-  d-byline,
-  d-byline p,
-  p.author,
-  p.affiliation,
-  d-byline h3,
-  .d-toc,
-  .d-toc-header,
-  .d-toc ul,
-  d-appendix p {
-  	font-size: 0.9rem;
-  }
-
-  d-appendix h3 + * {
-  	margin-top: 1.5em !important;
-  }
-
-
-  /*----- COLORED LIST BULLET----*/
-
-  d-article ul {
-    list-style: none; /* Remove default bullets */
-  }
-
-  d-article ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #CA225E; /* Change the color */
-    font-weight: normal; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1.5em; /* Also needed for space (tweak if needed) */
-    margin-left: -1.5em; /* Also needed for space (tweak if needed) */
-  }
-
-  d-article ul > li > p {
-    display: inline; /* to have content show up next to bullet */
-    line-height: .5em;
-  }
-
-  d-article ul > li { /*to add back in space between bullet items that I took away by making p display inline */
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .d-toc ul li::before {
-    content: " ";  /* Remove toc bullets */
-  }
-
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="mystyle.css" type="text/css"/>
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Python Posts","authors":[]}
+{"title":"The relation between Fast-food and obesity","description":"This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.","authors":[{"author":"Ardalan Mirshani","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-30T00:00:00.000+00:00","citationText":"Mirshani, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a class="logo" href="https://www.datamotto.com">
-<img src="logo.gif" alt="Logo"/>
-</a>
-<a href="index.html" class="title">Data Motto</a>
-</div>
-<div class="nav-right">
-<a href="index.html">All</a>
-<a href="R.html">R</a>
-<a href="Python.html">Python</a>
-<a href="about.html">About</a>
-<a href="index.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
-</a>
-<a href="https://github.com/ardeeshany/DataMotto" aria-label="Link to source">
-<i class="fab fa-github" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Python Posts">Python Posts</h1>
-<a href="posts/Python/2020-12-30-new-york-taxi-fare-rate/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 30, 2020</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>New York Taxi fare rate</h2>
-<div class="dt-tags"></div>
-<p>A short description of the post.</p>
-</div>
-</a>
-<a href="posts/Python/2020-12-30-the-relation-between-fast-food-and-obesity/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["matplotlib"]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 30, 2020</div>
-<div class="dt-authors">
-<div class="dt-author">Ardalan Mirshani</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>The relation between Fast-food and obesity</h2>
-<div class="dt-tags">
-<div class="dt-tag">matplotlib</div>
-</div>
-<p>This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:articles">articles</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:matplotlib">matplotlib</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Python Posts</h1>
+<h1>The relation between Fast-food and obesity</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt=tag">matplotlib</div>
+</div>
 <!--/radix_placeholder_categories-->
-
+<p><p>This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.</p></p>
 </div>
 
+<div class="d-byline">
+  
+  Ardalan Mirshani
+  
+<br/>12-30-2020
+</div>
 
 <div class="d-article">
+<p>Distill is a publication format for scientific and technical writing, native to the web.</p>
+<p>Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2192,10 +1461,7 @@ function init_posts_list() {
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

@@ -1,0 +1,23 @@
+---
+title: "The relation between Fast-food and obesity"
+description: |
+  This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.
+author: Ardalan Mirshani
+date: 12-30-2020
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - matplotlib
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+
