@@ -21,15 +21,21 @@ experiencing with Data!
       <description>
 
 
+&lt;div class="l-page"&gt;
 &lt;style type="text/css"&gt;
 d-title, d-byline {
   display: none;
 }
 
+d-appendix {
+  margin-top: -10px;
+}
+
+.article-footer {
+  text-align: center;
+}
 &lt;/style&gt;
-&lt;p&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;/p&gt;
-&lt;div class="l-page"&gt;
-&lt;style&gt;
+&lt;style type="text/css"&gt;
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&amp;display=swap');
 
@@ -113,6 +119,7 @@ d-appendix {
   height: 10px;
 }
 &lt;/style&gt;
+&lt;p&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;/p&gt;
 &lt;div class="bio-back"&gt;
 &lt;div class="row"&gt;
 &lt;div class="left-column"&gt;
@@ -120,13 +127,13 @@ d-appendix {
 &lt;pre class="bio-date"&gt;Author: &lt;a href = https://mirshani.com style="color: #004a76"&gt;Ardalan Mirshani&lt;/a&gt;, Jan 03 2021
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;span class="right-column"&gt; &lt;img src="https://img.icons8.com/color/30/000000/python.png" /&gt;&lt;!-- --&gt; &lt;img src="https://img.icons8.com/metro/30/000000/sql.png" /&gt;&lt;!-- --&gt; Julia
+&lt;span class="right-column"&gt; &lt;img src="https://img.icons8.com/color/30/000000/python.png" /&gt;&lt;!-- --&gt; &lt;img src="https://img.icons8.com/metro/30/000000/sql.png" /&gt;&lt;!-- --&gt;
 &lt;pre&gt; 📦 ggplot2, forcats &lt;/pre&gt;
 &lt;pre&gt; 🌑 Visualization, Modeling &lt;/pre&gt;
 &lt;p&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- &lt;img src= style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/color/96/000000/python.png style="width:25px; height:25px;"/&gt; &lt;img src=https://github.com/JuliaLang/julia-logo-graphics/blob/master/images/julia-logo-color.png style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/metro/52/000000/sql.png style="width:25px; height:25px;"/&gt;    --&gt;
+&lt;!-- &lt;img src= style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/color/96/000000/python.png style="width:25px; height:25px;"/&gt; &lt;img src= style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/metro/52/000000/sql.png style="width:25px; height:25px;"/&gt;    --&gt;
 &lt;div class="appendix-bottom"&gt;
 &lt;h3 id="updates-and-corrections"&gt;
 Reuse

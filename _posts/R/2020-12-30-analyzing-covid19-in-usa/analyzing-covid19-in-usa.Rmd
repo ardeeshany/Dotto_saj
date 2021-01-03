@@ -12,42 +12,12 @@ output:
     self_contained: false
 packages: [ggplot2, forcats]
 categories: [Visualization, Modeling]
-tech: [SqL, Python, Julia]
+tech: [SqL, Python]
 # preview: images/sharpe-ratio.png
 bibliography: bibliography.bib
 draft: false
 # slug: ???
 ---
-
-```{r, include=FALSE}
-knitr::opts_chunk$set(
-  echo = FALSE, 
-  message = FALSE, 
-  warning = FALSE, 
-  dpi = 300, 
-  tidy = 'styler'
-  )
-```
-
-```{r set-params, include=FALSE}
-params <- rmarkdown::metadata
-```
-
-
-```{r panelset, echo=FALSE}
-library(emo)
-library(here)
-xaringanExtra::use_panelset()
-```
-
-```{css}
-d-title, d-byline {
-  display: none;
-}
-
-```
-
-<br> <br> <br> <br>
 
 ::: {.l-page}
 ```{r, child= here::here("_assets", "article_header.Rmd")}
@@ -96,4 +66,3 @@ starwars %>%
 
 :::
 :::
-

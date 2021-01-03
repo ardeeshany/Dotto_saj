@@ -7,7 +7,42 @@ output:
   html_document
 ---
 
-<style>
+```{r set-params, include=FALSE}
+params <- rmarkdown::metadata
+```
+
+
+```{r panelset, echo=FALSE}
+library(emo)
+library(here)
+xaringanExtra::use_panelset()
+```
+
+```{css}
+d-title, d-byline {
+  display: none;
+}
+
+d-appendix {
+  margin-top: -10px;
+}
+
+.article-footer {
+  text-align: center;
+}
+```
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  message = FALSE, 
+  warning = FALSE, 
+  dpi = 300, 
+  tidy = 'styler'
+  )
+```
+
+```{css}
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
 
@@ -90,7 +125,9 @@ d-appendix {
   width: 1px;
   height: 10px;
 }
-</style>
+```
+
+<br> <br> <br> <br>
 
 <div class="bio-back">
 <div class="row">
