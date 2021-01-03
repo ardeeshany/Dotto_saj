@@ -12,12 +12,18 @@ output:
     self_contained: false
 packages: [ggplot2, forcats]
 categories: [Visualization, Modeling]
-tech: [SqL, Python]
+tech: [R, SqL, Python]
 # preview: images/sharpe-ratio.png
 bibliography: bibliography.bib
 draft: false
 # slug: ???
 ---
+
+```{r, setup}
+library(reticulate)
+```
+
+
 
 ::: {.l-page}
 ```{r, child= here::here("_assets", "article_header.Rmd")}
@@ -57,20 +63,40 @@ starwars %>%
 
 ::: {.panel}
 #### 🟢 Cleaning
-```{r, eval = F, echo = T}
-starwars %>%
-  filter(!is.na(species)) %>%
-  mutate(species = fct_lump(species, n = 3)) %>%
-  count(species)
+```{r}
+library(reticulate)
+```
+
+
+```{python}
+print("Hello Python!")
+x = [1, 2, 3]
+x
 ```
 :::
 
 ::: {.panel}
 #### 🟠 Modeling
+```{python, echo=T, eval=F}
+import matplotlib.pyplot as plt
+import numpy as np
+t = 1 + np.arange(0, 2, 0.01)
+s = 1 + np.sin(2*np.pi*t)
+plt.plot(t,s)
+plt.show()
+```
 :::
 
 ::: {.panel}
 #### 🔴 Visualization
+```{python, echo = F}
+import matplotlib.pyplot as plt
+import numpy as np
+t = 1 + np.arange(0, 2, 0.01)
+s = 1 + np.sin(2*np.pi*t)
+plt.plot(t,s)
+plt.show()
+```
 :::
 
 
