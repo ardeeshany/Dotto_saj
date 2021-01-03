@@ -108,6 +108,10 @@ d-appendix {
   padding:-left -20px;
 }
 
+.row-icon-style {
+  width: 1px;
+  height: 10px;
+}
 &lt;/style&gt;
 &lt;div class="bio-back"&gt;
 &lt;div class="row"&gt;
@@ -116,13 +120,13 @@ d-appendix {
 &lt;pre class="bio-date"&gt;Author: &lt;a href = https://mirshani.com style="color: #004a76"&gt;Ardalan Mirshani&lt;/a&gt;, Jan 03 2021
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;pre class="right-column"&gt;
-&lt;img src="/Users/ardalanmirshani/rsites/Datamotto/images/R_icon.png" width="26" /&gt; &lt;img src="/Users/ardalanmirshani/rsites/Datamotto/images/Python_icon.png" width="28" /&gt; &lt;img src="/Users/ardalanmirshani/rsites/Datamotto/images/SQL_icon.png" width="29" /&gt;   
-📦: ggplot2, forcats
-🌑: Visualization, Modeling
-&lt;/pre&gt;
+&lt;span class="right-column"&gt; &lt;img src="https://img.icons8.com/color/30/000000/python.png" /&gt;&lt;!-- --&gt; &lt;img src="https://img.icons8.com/metro/30/000000/sql.png" /&gt;&lt;!-- --&gt; Julia
+&lt;pre&gt; 📦 ggplot2, forcats &lt;/pre&gt;
+&lt;pre&gt; 🌑 Visualization, Modeling &lt;/pre&gt;
+&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;!-- &lt;img src= style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/color/96/000000/python.png style="width:25px; height:25px;"/&gt; &lt;img src=https://github.com/JuliaLang/julia-logo-graphics/blob/master/images/julia-logo-color.png style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/metro/52/000000/sql.png style="width:25px; height:25px;"/&gt;    --&gt;
 &lt;div class="appendix-bottom"&gt;
 &lt;h3 id="updates-and-corrections"&gt;
 Reuse

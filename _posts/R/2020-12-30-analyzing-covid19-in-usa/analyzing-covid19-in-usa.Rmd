@@ -12,10 +12,11 @@ output:
     self_contained: false
 packages: [ggplot2, forcats]
 categories: [Visualization, Modeling]
-tech: [R, SqL, Python]
+tech: [SqL, Python, Julia]
 # preview: images/sharpe-ratio.png
 bibliography: bibliography.bib
 draft: false
+# slug: ???
 ---
 
 ```{r, include=FALSE}

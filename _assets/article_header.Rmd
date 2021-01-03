@@ -86,6 +86,10 @@ d-appendix {
   padding:-left -20px;
 }
 
+.row-icon-style {
+  width: 1px;
+  height: 10px;
+}
 </style>
 
 <div class="bio-back">
@@ -98,13 +102,15 @@ d-appendix {
 <pre class="bio-date">Author: <a href = `r unlist(params$author)['url']` style="color: #004a76">`r unlist(params$author)['name']`</a>, `r ifelse(stringr::str_detect(pattern = "Sys.Date()", string = params$date), format(Sys.Date(), "%b %d %Y"), params$date)`
 </pre>
 </div>
-<pre class="right-column">
-`r if("R" %in% toupper(params$tech)){knitr::include_graphics(path = here::here("images", "R_icon.png"), dpi = 300)}` `r if("PYTHON" %in% toupper(params$tech)){{knitr::include_graphics(path = here::here("images", "Python_icon.png"), dpi = 330)}}` `r if("SQL" %in% toupper(params$tech)){{knitr::include_graphics(path = here::here("images", "SQL_icon.png"), dpi = 330)}}`   `r if(sum(!toupper(params$tech) %in% c("R", "PYTHON", "SQL")) != 0){params$tech[!toupper(params$tech) %in% c("R", "PYTHON")]}`
-📦: `r params$packages`
-🌑: `r params$categories`
-</pre>
+<span class="right-column">
+`r if("R" %in% toupper(params$tech)){knitr::include_graphics("https://img.icons8.com/offices/30/000000/registered-trademark.png")}` `r if("PYTHON" %in% toupper(params$tech)){knitr::include_graphics("https://img.icons8.com/color/30/000000/python.png")}` `r if("SQL" %in% toupper(params$tech)){knitr::include_graphics("https://img.icons8.com/metro/30/000000/sql.png")}` `r if(sum(!toupper(params$tech) %in% c("R", "PYTHON", "SQL")) != 0){params$tech[!toupper(params$tech) %in% c("R", "PYTHON", "SQL")]}`
+<pre> 📦 `r params$packages` </pre>
+<pre> 🌑 `r params$categories` </pre>
+</span>
 </div>
 </div>
+
+<!-- <img src=`r if("R" %in% toupper(params$tech)){"https://img.icons8.com/officel/80/000000/registered-trademark.png"}` style="width:25px; height:25px;"/> <img src=`r if("PYTHON" %in% toupper(params$tech)){"https://img.icons8.com/color/96/000000/python.png"}` style="width:25px; height:25px;"/> <img src=`r if("JULIA" %in% toupper(params$tech)){"https://github.com/JuliaLang/julia-logo-graphics/blob/master/images/julia-logo-color.png"}` style="width:25px; height:25px;"/> <img src=`r if("SQL" %in% toupper(params$tech)){"https://img.icons8.com/metro/52/000000/sql.png"}` style="width:25px; height:25px;"/>   `r if(sum(!toupper(params$tech) %in% c("R", "PYTHON", "JULIA", "SQL")) != 0){params$tech[!toupper(params$tech) %in% c("R", "PYTHON", "JULIA", "SQL")]}` -->
 
 <div class="appendix-bottom">
 <h3 id="updates-and-corrections">Reuse</h3>
