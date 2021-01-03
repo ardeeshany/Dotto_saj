@@ -112,6 +112,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="twitter:description" content="This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe."/>
 <meta property="twitter:url" content="https://www.datamotto.com/posts/Python/2020-12-30-the-relation-between-fast-food-and-obesity/"/>
 <meta property="twitter:site" content="@DataMotto"/>
+<meta property="twitter:creator" content="@DataMotto"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -1807,10 +1808,10 @@ d-article h2 {
 
 /* background-image for fade-to-white color of navbar */
 .distill-site-header{
-  padding: 5px 0px;
+  padding: 0px 0px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0));
   background-color: transparent;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Noto Serif JP";
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1819,6 +1820,7 @@ d-article h2 {
 .distill-site-header .logo img{
   max-height: 40px; /* Makes logo bigger, default was 20px */
   padding: -5px;
+  margin-top: 15px;
 }
 
 /* dropdown navbar color on mobile */
@@ -1840,7 +1842,7 @@ d-article h2 {
   text-decoration: none;
   padding-left: 0px; /* overrides default so animation looks Ok */
   padding-right: 0px; /* overrides default so animation looks Ok */
-  margin: 10px 14px; /* replaces default padding values for margin values */
+  margin: 24px 14px; /* replaces default padding values for margin values */
 }
 
 
@@ -1941,7 +1943,6 @@ d-appendix h3 + * {
 	margin-top: 1.5em !important;
 }
 
-
 /*----- COLORED LIST BULLET----*/
 
 d-article ul {
@@ -1950,7 +1951,7 @@ d-article ul {
 
 d-article ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #CA225E; /* Change the color */
+  color: #94a2af; /* Change the color */
   font-weight: normal; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1.5em; /* Also needed for space (tweak if needed) */
@@ -1959,16 +1960,34 @@ d-article ul li::before {
 
 d-article ul > li > p {
   display: inline; /* to have content show up next to bullet */
-  line-height: .5em;
+  line-height: .2em;
 }
 
 d-article ul > li { /*to add back in space between bullet items that I took away by making p display inline */
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 .d-toc ul li::before {
   content: " ";  /* Remove toc bullets */
+}
+
+d-footnote {
+    margin-left: -30px;
+}
+
+
+/*----- Appendix ----*/
+
+d-appendix {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*----- footer ----*/
+
+.distill-site-footer {
+  background-color: white;
 }
 
 </style>
@@ -1996,15 +2015,17 @@ d-article ul > li { /*to add back in space between bullet items that I took away
 <a href="../../../index.html" class="title">Data Motto</a>
 </div>
 <div class="nav-right">
-<a href="../../../index.html">All</a>
+<a href="../../../about.html">The Whole game!</a>
 <a href="../../../R.html">R</a>
 <a href="../../../Python.html">Python</a>
-<a href="../../../about.html">About</a>
-<a href="../../../index.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
+<a href="https://datamotto.slack.com">
+<i class="fa fa-slack fa-1x" aria-hidden="true"></i>
 </a>
-<a href="https://github.com/ardeeshany/DataMotto" aria-label="Link to source">
-<i class="fab fa-github" aria-hidden="true"></i>
+<a href="https://github.com/ardeeshany/DataMotto">
+<i class="fa fa-github fa-1x" aria-hidden="true"></i>
+</a>
+<a href="../../../index.xml">
+<i class="fa fa-rss fa-1x" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2046,18 +2067,10 @@ d-article ul > li { /*to add back in space between bullet items that I took away
       <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.datamotto.com%2Fposts%2FPython%2F2020-12-30-the-relation-between-fast-food-and-obesity%2F&amp;title=The%20relation%20between%20Fast-food%20and%20obesity">
         <i class="fab fa-linkedin"></i>
       </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fwww.datamotto.com%2Fposts%2FPython%2F2020-12-30-the-relation-between-fast-food-and-obesity%2F">
+        <i class="fab fa-facebook"></i>
+      </a>
     </span>
-  </p>
-  <p>
-    <div class="subscribe"><form method='post' action='https://blogtrottr.com'>
-  <p>Get notified of new posts via email:</p>
-  <input type='text' name='btr_email' />
-  <input type='hidden' name='btr_url'
-         value='https://datamotto.com/index.xml'/>
-  <input type='hidden' name='schedule_type' value='0' />
-  <input type='submit' value='Subscribe' />
-</form>
-</div>
   </p>
 </div>
 <!--/radix_placeholder_article_footer-->

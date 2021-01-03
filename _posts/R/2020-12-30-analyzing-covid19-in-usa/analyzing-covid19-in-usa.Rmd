@@ -3,16 +3,30 @@ title: "Analyzing COVID19 in USA"
 description: |
   Analyzing Covid 19 reports
 author:
-  - name: Nora Jones
-    url: https://example.com/norajones
-date: 12-30-2020
+  - name: Ardalan Mirshani
+    affiliation: Novartis
+    url: https://mirshani.com
+date: "`r Sys.Date()`"
 output:
   distill::distill_article:
     self_contained: false
-categories:
-  - ggplot2
+packages: [ggplot2, forcats]
+categories: [Visualization, Modeling]
+tech: [R, SqL, Python]
 # preview: images/sharpe-ratio.png
+bibliography: bibliography.bib
+draft: false
 ---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  message = FALSE, 
+  warning = FALSE, 
+  dpi = 300, 
+  tidy = 'styler'
+  )
+```
 
 ```{r set-params, include=FALSE}
 params <- rmarkdown::metadata
@@ -30,21 +44,19 @@ d-title, d-byline {
   display: none;
 }
 
-d-article {
-  padding-top: 0.5rem;
-  rid-column-gap: -10px;
-}
 ```
 
 <br> <br> <br> <br>
 
-```{r, child= here::here("_assets", "bio_header.Rmd")}
+::: {.l-page}
+```{r, child= here::here("_assets", "article_header.Rmd")}
 ```
-
 
 ::: {.panelset}
 ::: {.panel}
-# Problem
+#### 🟣 Intro
+
+[@uber_technologies_inc_uber_2020]
 
 <!-- LikeBtn.com BEGIN -->
 
@@ -55,14 +67,32 @@ d-article {
 :::
 
 ::: {.panel}
-:::
-
-::: {.panel}
-#### `theme.css` snippet `r emo::ji("clock")`
-
-```{r, layout="l-body-outset"}
+#### 🔵 Data
+```{r, layout="l-screen"}
 library(rmarkdown)
 paged_table(mtcars)
 ```
 :::
+
+::: {.panel}
+#### 🟢 Cleaning
+```{r, eval = F, echo = T}
+starwars %>%
+  filter(!is.na(species)) %>%
+  mutate(species = fct_lump(species, n = 3)) %>%
+  count(species)
+```
 :::
+
+::: {.panel}
+#### 🟠 Modeling
+:::
+
+::: {.panel}
+#### 🔴 Visualization
+:::
+
+
+:::
+:::
+

@@ -1,0 +1,116 @@
+---
+title: "Article header card"
+subtitle: "Template"
+author: "Ardalan Mirshani"
+date: "09-10-2020"
+output: 
+  html_document
+---
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+.bio-title {
+  font-size: 28px;
+  color: #2E4A62;
+  font-weight: bold;
+}
+
+.bio-subtitle {
+  font-size: 16px;
+  color: #808080;
+}
+
+.bio-author {
+  color: #808080;
+}
+
+.bio-date {
+  font-size: 12px;
+  color: #808080;
+}
+
+.bio-packages {
+  font-size: 14px;
+  color: #808080;
+}
+
+.bio-categories {
+  font-size: 12px;
+  color: #808080;
+  text-transform: uppercase;
+}
+
+.bio-back {
+  line-height: 200%;
+  font-family: 'Mulish', sans-serif;
+}
+
+.left-column {
+  float: left;
+  width: 70%;
+}
+
+.mid-column {
+  float: left;
+  width: 18%;
+  padding: 2px 0px;
+  line-height: 2.5em;
+  font-size: 14px;
+}
+
+.right-column {
+  float: left;
+  width: 25%;
+  padding: 2px 0px;
+  line-height: 2.5em;
+  font-size: 14px;
+  color: #002e48;
+}
+
+.row {
+  display: flex;
+}
+
+.tab {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+d-appendix {
+  line-height: 1em;
+}
+
+.social_footer {
+  padding:-left -20px;
+}
+
+</style>
+
+<div class="bio-back">
+<div class="row">
+<div class="left-column">
+<span class="bio-title"> `r params$title`:</span>
+<br>
+<span class="bio-subtitle"> `r params$description` </span>
+<br>
+<pre class="bio-date">Author: <a href = `r unlist(params$author)['url']` style="color: #004a76">`r unlist(params$author)['name']`</a>, `r ifelse(stringr::str_detect(pattern = "Sys.Date()", string = params$date), format(Sys.Date(), "%b %d %Y"), params$date)`
+</pre>
+</div>
+<pre class="right-column">
+`r if("R" %in% toupper(params$tech)){knitr::include_graphics(path = here::here("images", "R_icon.png"), dpi = 300)}` `r if("PYTHON" %in% toupper(params$tech)){{knitr::include_graphics(path = here::here("images", "Python_icon.png"), dpi = 330)}}` `r if("SQL" %in% toupper(params$tech)){{knitr::include_graphics(path = here::here("images", "SQL_icon.png"), dpi = 330)}}`   `r if(sum(!toupper(params$tech) %in% c("R", "PYTHON", "SQL")) != 0){params$tech[!toupper(params$tech) %in% c("R", "PYTHON")]}`
+📦: `r params$packages`
+🌑: `r params$categories`
+</pre>
+</div>
+</div>
+
+<div class="appendix-bottom">
+<h3 id="updates-and-corrections">Reuse</h3>
+Text and figures are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+</div>
+<div class="appendix-bottom">
+<h3 id="updates-and-corrections">Icons</h3>
+by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>

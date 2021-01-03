@@ -1,5 +1,5 @@
 ---
-title: "All Dottos:"
+title: "Data Motto"
 site: distill::distill_website
 listing: posts
 ---
@@ -10,3 +10,5 @@ listing: posts
 ```
 
 <br> <br> <br> <br> <br> <br>
+
+

@@ -33,10 +33,10 @@ d-article h2 {
 
 /* background-image for fade-to-white color of navbar */
 .distill-site-header{
-  padding: 5px 0px;
+  padding: 0px 0px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0));
   background-color: transparent;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Noto Serif JP";
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -45,6 +45,7 @@ d-article h2 {
 .distill-site-header .logo img{
   max-height: 40px; /* Makes logo bigger, default was 20px */
   padding: -5px;
+  margin-top: 15px;
 }
 
 /* dropdown navbar color on mobile */
@@ -66,7 +67,7 @@ d-article h2 {
   text-decoration: none;
   padding-left: 0px; /* overrides default so animation looks Ok */
   padding-right: 0px; /* overrides default so animation looks Ok */
-  margin: 10px 14px; /* replaces default padding values for margin values */
+  margin: 24px 14px; /* replaces default padding values for margin values */
 }
 
 
@@ -167,7 +168,6 @@ d-appendix h3 + * {
 	margin-top: 1.5em !important;
 }
 
-
 /*----- COLORED LIST BULLET----*/
 
 d-article ul {
@@ -176,7 +176,7 @@ d-article ul {
 
 d-article ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #CA225E; /* Change the color */
+  color: #94a2af; /* Change the color */
   font-weight: normal; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1.5em; /* Also needed for space (tweak if needed) */
@@ -185,14 +185,32 @@ d-article ul li::before {
 
 d-article ul > li > p {
   display: inline; /* to have content show up next to bullet */
-  line-height: .5em;
+  line-height: .2em;
 }
 
 d-article ul > li { /*to add back in space between bullet items that I took away by making p display inline */
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 .d-toc ul li::before {
   content: " ";  /* Remove toc bullets */
+}
+
+d-footnote {
+    margin-left: -30px;
+}
+
+
+/*----- Appendix ----*/
+
+d-appendix {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*----- footer ----*/
+
+.distill-site-footer {
+  background-color: white;
 }

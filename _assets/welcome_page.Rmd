@@ -35,17 +35,17 @@ h1 {
 
 </style>
 
-<br> <br>
-
-<div style="background-color: #fffbfc; text-align: center; letter-spacing: 2px; line-height: 5rem;">
+<div style="text-align: center; letter-spacing: 2px; line-height: 4rem;">
 <span style="font-size: 55px; color: #ff72a3; line-height:10px;">Share Efficiently <br> Your Data Experience</span>
 <br>
 
 <span style="letter-spacing: 2px;">
-<i class="fab fa-r-project"></i> <span class="blue-dot"></span>: `r length(list.dirs(here::here("_posts","R"), recursive = F))` <i class="fab fa-python"></i>  <span class="yellow-dot"></span>: `r length(list.dirs(here::here("_posts","Python"), recursive = F))`
+<span class="blue-dot"></span> <i class="fab fa-r-project"></i>: `r length(list.dirs(here::here("_posts","R"), recursive = F))` <span class="yellow-dot"></span> <i class="fab fa-python"></i>: `r length(list.dirs(here::here("_posts","Python"), recursive = F))`
 </span>
 
 Follow <span style="color: #005678">Data Motto</span> on
-<a href="https://twitter.com/DataMotto" class="fa fa-twitter" style="color: #55ACEE; font-size:15px; padding: .5em;"></a> & <a href="https://www.linkedin.com/company/datamotto" class="fa fa-linkedin" style="color: #007bb5; font-size:15px; padding: .5em;"></a>
+<a href="https://twitter.com/DataMotto" class="fa fa-twitter" style="color: #55ACEE; font-size:18px; padding: .5em;"></a> & <a href="https://www.linkedin.com/company/datamotto" class="fa fa-linkedin" style="color: #007bb5; font-size:18px; padding: .5em;"></a>
 
+Join our online community at <a href="https://Datamotto.slack.com" class="fa fa-slack" style="color: #55ACEE; font-size:18px; padding: .5em;"></a>
 </div>
+

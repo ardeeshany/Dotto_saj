@@ -4,19 +4,20 @@ description: |
   A web platform to create high quality summary of
   experiencing with Data!
 output_dir: "_site"
+exclude: "README.md"
 base_url: https://www.datamotto.com
-creative_commons: CC BY-NC
 favicon: images/logo.png
 google_analytics: "G-WZMEMQM0Y2"
 collections:
   posts:
+    # creative_commons: CC BY-NC; # will be incuded in _assets/article_header.Rmd
     categories: true
     categories_metadata: true
     authors_metadata: true
     feed_items_max: 20
     citations: false
-    share: [twitter, linkedin] # facebook
-    subscribe: _subscribe.html
+    share: [twitter, linkedin, facebook] # facebook
+    # subscribe: _subscribe.html
     # custom: custom.html
     # disqus:
     #   shortname: reproducible-finance-with-r
@@ -28,26 +29,37 @@ rss:
     # - forecasting
 twitter:
   site: "@DataMotto"
+  creator: "@DataMotto"
 navbar:
+  title: "Data Motto"
   logo:
     image: images/logo.gif
     href: https://www.datamotto.com
   search: false
-  source_url: https://github.com/ardeeshany/DataMotto
+  source_url: false # https://github.com/ardeeshany/DataMotto
   right:
-    - text: "All"
-      href: index.html
+    - text: "The Whole game!"
+      href: about.html
+    # - text: "All"
+    #   href: index.html
     - text: "R"
       href: R.html
     - text: "Python"
       href: Python.html
-    - text: "About"
-      href: about.html
-    - icon: fa fa-rss
+    - icon: fa fa-slack fa-1x
+      href: https://datamotto.slack.com
+    - icon: fa fa-github fa-1x
+      href: https://github.com/ardeeshany/DataMotto
+    - icon: fa fa-rss fa-1x
       href: index.xml
 output:
   distill::distill_article:
+    highlight: rstudio
     toc: true
     toc_depth: 2
     toc_float: false
     css: mystyle.css
+    # includes:
+    #   in_header: header.html
+    #   before_body: doc_prefix.html
+    #   after_body: doc_suffix.html
