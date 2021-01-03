@@ -19,12 +19,6 @@ draft: false
 # slug: ???
 ---
 
-```{r, setup}
-library(reticulate)
-```
-
-
-
 ::: {.l-page}
 ```{r, child= here::here("_assets", "article_header.Rmd")}
 ```
@@ -87,15 +81,22 @@ plt.show()
 ```
 :::
 
+
 ::: {.panel}
 #### 🔴 Visualization
-```{python, echo = F}
-import matplotlib.pyplot as plt
-import numpy as np
-t = 1 + np.arange(0, 2, 0.01)
-s = 1 + np.sin(2*np.pi*t)
-plt.plot(t,s)
-plt.show()
+```{r, echo=F, out.width="50%"}
+library(ggplot2)
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, col = Species)) +
+  geom_point() +
+  labs(title = "A Nice Iris Dataset Graphic", x = "Sepal Length", y = "Sepal Width") +
+  theme_minimal()
+```
+:::
+
+::: {.panel}
+#### 🔴 Visualization
+```{r, preview = T, out.width="50%"}
+ggplot(diamonds) + geom_point(aes(x=carat, y=price, color=cut)) + geom_smooth(aes(x=carat, y=price, color=cut)) # Same as above but specifying the aesthetics inside the geoms.
 ```
 :::
 

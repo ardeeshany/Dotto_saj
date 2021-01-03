@@ -5,19 +5,73 @@ description: |
 author:
   - name: Nora Jones
     url: https://example.com/norajones
-date: 12-30-2020
+# preview: https://www.jfkairport.com/static/JFK/image/jfk_taxi_new.jpg
+date: "`r Sys.Date()`"
+tech: [Python]
+packages: [Matplotlib]
+categories: [Visualization]
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+::: {.l-page}
+```{r, child= here::here("_assets", "article_header.Rmd")}
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+::: {.panelset}
+::: {.panel}
+#### 🟣 Intro
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+<h2>Question: How seasonality affects the Taxi Fare in Manhattan?</h2>
+
+<h3>Hints:</h3>
+- library(matplotlib)
+
+:::
+
+::: {.panel}
+#### 🔵 Data
+```{r, layout="l-screen"}
+library(rmarkdown)
+paged_table(mtcars)
+```
+:::
+
+::: {.panel}
+#### 🟢 Cleaning
+```{python, eval = F, echo = T}
+import matplotlib.pyplot as plt
+import numpy as np 
+import pandas as pd
+df = pd.DataFrame(
+  np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+  )
+df = df.cumsum()
+plt.figure()
+df.plot()
+plt.legend(loc='best')
+```
+:::
 
 
+
+::: {.panel}
+#### 🔴 Visualization
+```{python, echo = F, preview=T}
+import matplotlib.pyplot as plt
+import numpy as np 
+import pandas as pd
+df = pd.DataFrame(
+  np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+  )
+df = df.cumsum()
+plt.figure()
+df.plot()
+plt.legend(loc='best')
+```
+:::
+
+
+:::
+:::

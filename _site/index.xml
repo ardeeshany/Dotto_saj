@@ -15,221 +15,27 @@ experiencing with Data!
     <generator>Distill</generator>
     <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Analyzing COVID19 in USA</title>
-      <dc:creator>Ardalan Mirshani</dc:creator>
-      <link>https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa</link>
-      <description>
-
-
-&lt;div class="l-page"&gt;
-&lt;style type="text/css"&gt;
-d-title, d-byline {
-  display: none;
-}
-
-d-appendix {
-  margin-top: -10px;
-}
-
-.article-footer {
-  text-align: center;
-}
-&lt;/style&gt;
-&lt;style type="text/css"&gt;
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&amp;display=swap');
-
-.bio-title {
-  font-size: 28px;
-  color: #007cab;
-  font-weight: bold;
-}
-
-.bio-subtitle {
-  font-size: 16px;
-  color: #808080;
-}
-
-.bio-author {
-  color: #808080;
-}
-
-.bio-date {
-  font-size: 12px;
-  color: #808080;
-}
-
-.bio-packages {
-  font-size: 14px;
-  color: #808080;
-}
-
-.bio-categories {
-  font-size: 12px;
-  color: #808080;
-  text-transform: uppercase;
-}
-
-.bio-back {
-  line-height: 200%;
-  font-family: 'Mulish', sans-serif;
-}
-
-.left-column {
-  float: left;
-  width: 70%;
-}
-
-.mid-column {
-  float: left;
-  width: 18%;
-  padding: 2px 0px;
-  line-height: 2.5em;
-  font-size: 14px;
-}
-
-.right-column {
-  float: left;
-  width: 25%;
-  padding: 2px 0px;
-  line-height: 2.5em;
-  font-size: 14px;
-  color: #002e48;
-}
-
-.row {
-  display: flex;
-}
-
-.tab {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-d-appendix {
-  line-height: 1em;
-}
-
-.social_footer {
-  padding:-left -20px;
-}
-
-.row-icon-style {
-  width: 1px;
-  height: 10px;
-}
-&lt;/style&gt;
-&lt;p&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;/p&gt;
-&lt;div class="bio-back"&gt;
-&lt;div class="row"&gt;
-&lt;div class="left-column"&gt;
-&lt;span class="bio-title"&gt; Analyzing COVID19 in USA:&lt;/span&gt; &lt;br&gt; &lt;span class="bio-subtitle"&gt; Analyzing Covid 19 reports &lt;/span&gt; &lt;br&gt;
-&lt;pre class="bio-date"&gt;Author: &lt;a href = https://mirshani.com style="color: #004a76"&gt;Ardalan Mirshani&lt;/a&gt;, Jan 03 2021
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;span class="right-column"&gt; &lt;img src="https://img.icons8.com/offices/30/000000/registered-trademark.png" /&gt;&lt;!-- --&gt; &lt;img src="https://img.icons8.com/color/30/000000/python.png" /&gt;&lt;!-- --&gt; &lt;img src="https://img.icons8.com/metro/30/000000/sql.png" /&gt;&lt;!-- --&gt;
-&lt;pre&gt; 📦 ggplot2, forcats &lt;/pre&gt;
-&lt;pre&gt; 🌑 Visualization, Modeling &lt;/pre&gt;
-&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- &lt;img src=https://img.icons8.com/officel/80/000000/registered-trademark.png style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/color/96/000000/python.png style="width:25px; height:25px;"/&gt; &lt;img src= style="width:25px; height:25px;"/&gt; &lt;img src=https://img.icons8.com/metro/52/000000/sql.png style="width:25px; height:25px;"/&gt;    --&gt;
-&lt;div class="appendix-bottom"&gt;
-&lt;h3 id="updates-and-corrections"&gt;
-Reuse
-&lt;/h3&gt;
-&lt;p&gt;Text and figures are licensed under Creative Commons Attribution &lt;a href="https://creativecommons.org/licenses/by-nc/4.0/"&gt;CC BY-NC 4.0&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="appendix-bottom"&gt;
-&lt;h3 id="updates-and-corrections"&gt;
-Icons
-&lt;/h3&gt;
-&lt;p&gt;by &lt;a target="_blank" href="https://icons8.com"&gt;Icons8&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;div class="panelset"&gt;
-&lt;div id="intro" class="panel"&gt;
-&lt;h4&gt;🟣 Intro&lt;/h4&gt;
-&lt;p&gt;&lt;span class="citation"&gt;(Uber Technologies, Inc 2020)&lt;/span&gt;&lt;/p&gt;
-&lt;!-- LikeBtn.com BEGIN --&gt;
-&lt;script&gt;(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");&lt;/script&gt;
-&lt;!-- LikeBtn.com END --&gt;
-&lt;/div&gt;
-&lt;div id="data" class="panel"&gt;
-&lt;h4&gt;🔵 Data&lt;/h4&gt;
-&lt;div data-pagedtable="false"&gt;
-&lt;script data-pagedtable-source type="application/json"&gt;
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["mpg"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["cyl"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["disp"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["hp"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["drat"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["wt"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["qsec"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["vs"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["am"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["gear"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["carb"],"name":[11],"type":["dbl"],"align":["right"]}],"data":[{"1":"21.0","2":"6","3":"160.0","4":"110","5":"3.90","6":"2.620","7":"16.46","8":"0","9":"1","10":"4","11":"4","_rn_":"Mazda RX4"},{"1":"21.0","2":"6","3":"160.0","4":"110","5":"3.90","6":"2.875","7":"17.02","8":"0","9":"1","10":"4","11":"4","_rn_":"Mazda RX4 Wag"},{"1":"22.8","2":"4","3":"108.0","4":"93","5":"3.85","6":"2.320","7":"18.61","8":"1","9":"1","10":"4","11":"1","_rn_":"Datsun 710"},{"1":"21.4","2":"6","3":"258.0","4":"110","5":"3.08","6":"3.215","7":"19.44","8":"1","9":"0","10":"3","11":"1","_rn_":"Hornet 4 Drive"},{"1":"18.7","2":"8","3":"360.0","4":"175","5":"3.15","6":"3.440","7":"17.02","8":"0","9":"0","10":"3","11":"2","_rn_":"Hornet Sportabout"},{"1":"18.1","2":"6","3":"225.0","4":"105","5":"2.76","6":"3.460","7":"20.22","8":"1","9":"0","10":"3","11":"1","_rn_":"Valiant"},{"1":"14.3","2":"8","3":"360.0","4":"245","5":"3.21","6":"3.570","7":"15.84","8":"0","9":"0","10":"3","11":"4","_rn_":"Duster 360"},{"1":"24.4","2":"4","3":"146.7","4":"62","5":"3.69","6":"3.190","7":"20.00","8":"1","9":"0","10":"4","11":"2","_rn_":"Merc 240D"},{"1":"22.8","2":"4","3":"140.8","4":"95","5":"3.92","6":"3.150","7":"22.90","8":"1","9":"0","10":"4","11":"2","_rn_":"Merc 230"},{"1":"19.2","2":"6","3":"167.6","4":"123","5":"3.92","6":"3.440","7":"18.30","8":"1","9":"0","10":"4","11":"4","_rn_":"Merc 280"},{"1":"17.8","2":"6","3":"167.6","4":"123","5":"3.92","6":"3.440","7":"18.90","8":"1","9":"0","10":"4","11":"4","_rn_":"Merc 280C"},{"1":"16.4","2":"8","3":"275.8","4":"180","5":"3.07","6":"4.070","7":"17.40","8":"0","9":"0","10":"3","11":"3","_rn_":"Merc 450SE"},{"1":"17.3","2":"8","3":"275.8","4":"180","5":"3.07","6":"3.730","7":"17.60","8":"0","9":"0","10":"3","11":"3","_rn_":"Merc 450SL"},{"1":"15.2","2":"8","3":"275.8","4":"180","5":"3.07","6":"3.780","7":"18.00","8":"0","9":"0","10":"3","11":"3","_rn_":"Merc 450SLC"},{"1":"10.4","2":"8","3":"472.0","4":"205","5":"2.93","6":"5.250","7":"17.98","8":"0","9":"0","10":"3","11":"4","_rn_":"Cadillac Fleetwood"},{"1":"10.4","2":"8","3":"460.0","4":"215","5":"3.00","6":"5.424","7":"17.82","8":"0","9":"0","10":"3","11":"4","_rn_":"Lincoln Continental"},{"1":"14.7","2":"8","3":"440.0","4":"230","5":"3.23","6":"5.345","7":"17.42","8":"0","9":"0","10":"3","11":"4","_rn_":"Chrysler Imperial"},{"1":"32.4","2":"4","3":"78.7","4":"66","5":"4.08","6":"2.200","7":"19.47","8":"1","9":"1","10":"4","11":"1","_rn_":"Fiat 128"},{"1":"30.4","2":"4","3":"75.7","4":"52","5":"4.93","6":"1.615","7":"18.52","8":"1","9":"1","10":"4","11":"2","_rn_":"Honda Civic"},{"1":"33.9","2":"4","3":"71.1","4":"65","5":"4.22","6":"1.835","7":"19.90","8":"1","9":"1","10":"4","11":"1","_rn_":"Toyota Corolla"},{"1":"21.5","2":"4","3":"120.1","4":"97","5":"3.70","6":"2.465","7":"20.01","8":"1","9":"0","10":"3","11":"1","_rn_":"Toyota Corona"},{"1":"15.5","2":"8","3":"318.0","4":"150","5":"2.76","6":"3.520","7":"16.87","8":"0","9":"0","10":"3","11":"2","_rn_":"Dodge Challenger"},{"1":"15.2","2":"8","3":"304.0","4":"150","5":"3.15","6":"3.435","7":"17.30","8":"0","9":"0","10":"3","11":"2","_rn_":"AMC Javelin"},{"1":"13.3","2":"8","3":"350.0","4":"245","5":"3.73","6":"3.840","7":"15.41","8":"0","9":"0","10":"3","11":"4","_rn_":"Camaro Z28"},{"1":"19.2","2":"8","3":"400.0","4":"175","5":"3.08","6":"3.845","7":"17.05","8":"0","9":"0","10":"3","11":"2","_rn_":"Pontiac Firebird"},{"1":"27.3","2":"4","3":"79.0","4":"66","5":"4.08","6":"1.935","7":"18.90","8":"1","9":"1","10":"4","11":"1","_rn_":"Fiat X1-9"},{"1":"26.0","2":"4","3":"120.3","4":"91","5":"4.43","6":"2.140","7":"16.70","8":"0","9":"1","10":"5","11":"2","_rn_":"Porsche 914-2"},{"1":"30.4","2":"4","3":"95.1","4":"113","5":"3.77","6":"1.513","7":"16.90","8":"1","9":"1","10":"5","11":"2","_rn_":"Lotus Europa"},{"1":"15.8","2":"8","3":"351.0","4":"264","5":"4.22","6":"3.170","7":"14.50","8":"0","9":"1","10":"5","11":"4","_rn_":"Ford Pantera L"},{"1":"19.7","2":"6","3":"145.0","4":"175","5":"3.62","6":"2.770","7":"15.50","8":"0","9":"1","10":"5","11":"6","_rn_":"Ferrari Dino"},{"1":"15.0","2":"8","3":"301.0","4":"335","5":"3.54","6":"3.570","7":"14.60","8":"0","9":"1","10":"5","11":"8","_rn_":"Maserati Bora"},{"1":"21.4","2":"4","3":"121.0","4":"109","5":"4.11","6":"2.780","7":"18.60","8":"1","9":"1","10":"4","11":"2","_rn_":"Volvo 142E"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  &lt;/script&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="cleaning" class="panel"&gt;
-&lt;h4&gt;🟢 Cleaning&lt;/h4&gt;
-&lt;pre class="r"&gt;&lt;code&gt;starwars %&amp;gt;%
-  filter(!is.na(species)) %&amp;gt;%
-  mutate(species = fct_lump(species, n = 3)) %&amp;gt;%
-  count(species)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id="cleaning-1" class="panel"&gt;
-&lt;h4&gt;🟢 Cleaning&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;Hello Python!&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;[1, 2, 3]&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id="modeling" class="panel"&gt;
-&lt;h4&gt;🟠 Modeling&lt;/h4&gt;
-&lt;pre class="python"&gt;&lt;code&gt;import matplotlib.pyplot as plt
-import numpy as np
-t = 1 + np.arange(0, 2, 0.01)
-s = 1 + np.sin(2*np.pi*t)
-plt.plot(t,s)
-plt.show()&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id="visualization" class="panel"&gt;
-&lt;h4&gt;🔴 Visualization&lt;/h4&gt;
-&lt;p&gt;&lt;img src="fileff913ba259d4_files/figure-html/unnamed-chunk-7-1.png" width="672" /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;div id="refs" class="references csl-bib-body hanging-indent"&gt;
-&lt;div id="ref-uber_technologies_inc_uber_2020" class="csl-entry"&gt;
-Uber Technologies, Inc. 2020. &lt;span&gt;“Uber &lt;span&gt;Movement&lt;/span&gt;.”&lt;/span&gt; &lt;a href="https://movement.uber.com/"&gt;https://movement.uber.com/&lt;/a&gt;.
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      <distill:md5>00b450ed57b5bb11f7e72b23d22d6ae2</distill:md5>
-      <category>Visualization</category>
-      <category>Modeling</category>
-      <guid>https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa</guid>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa/analyzing-covid19-in-usa_files/figure-html5/unnamed-chunk-7-1.png" medium="image" type="image/png" width="3900" height="2400"/>
-    </item>
-    <item>
       <title>New York Taxi fare rate</title>
       <dc:creator>Nora Jones</dc:creator>
       <link>https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate</link>
       <description>&lt;p&gt;A short description of the post.&lt;/p&gt;
 </description>
+      <category>Visualization</category>
       <guid>https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate</guid>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" medium="image" type="image/png" width="3900" height="2400"/>
     </item>
     <item>
-      <title>The relation between Fast-food and obesity</title>
+      <title>Analyzing COVID19 in USA</title>
       <dc:creator>Ardalan Mirshani</dc:creator>
-      <link>https://www.datamotto.com/posts/Python/2020-12-30-the-relation-between-fast-food-and-obesity</link>
-      <description>&lt;p&gt;This is a shoecase of using matplotlib for showing the relationship between obesity and fast-food in Europe.&lt;/p&gt;
+      <link>https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa</link>
+      <description>&lt;p&gt;Analyzing Covid 19 reports&lt;/p&gt;
 </description>
-      <category>matplotlib</category>
-      <guid>https://www.datamotto.com/posts/Python/2020-12-30-the-relation-between-fast-food-and-obesity</guid>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>How to fix column names</title>
-      <dc:creator>Nora Jones</dc:creator>
-      <link>https://www.datamotto.com/posts/R/2020-12-30-how-to-fix-column-names</link>
-      <description>&lt;p&gt;A short description of the post.&lt;/p&gt;
-</description>
-      <guid>https://www.datamotto.com/posts/R/2020-12-30-how-to-fix-column-names</guid>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <category>Visualization</category>
+      <category>Modeling</category>
+      <guid>https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa</guid>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa/analyzing-covid19-in-usa_files/figure-html5/unnamed-chunk-8-1.png" medium="image" type="image/png" width="3900" height="2400"/>
     </item>
   </channel>
 </rss>
