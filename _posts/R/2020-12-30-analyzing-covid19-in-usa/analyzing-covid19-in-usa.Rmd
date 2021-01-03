@@ -7,6 +7,7 @@ author:
     affiliation: Novartis
     url: https://mirshani.com
 date: "`r Sys.Date()`"
+base_url: https://www.datamotto.com
 output:
   distill::distill_article:
     self_contained: false
@@ -16,6 +17,9 @@ tech: [R, SqL, Python]
 # preview: images/sharpe-ratio.png
 bibliography: bibliography.bib
 draft: false
+twitter:
+  site: "@DataMotto"
+  creator: "@DataMotto"
 # slug: ???
 ---
 
