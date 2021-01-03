@@ -48,7 +48,7 @@ knitr::opts_chunk$set(
 
 .bio-title {
   font-size: 28px;
-  color: #2E4A62;
+  color: #007cab;
   font-weight: bold;
 }
 

@@ -1479,7 +1479,7 @@ d-appendix {
 
 .bio-title {
   font-size: 28px;
-  color: #2E4A62;
+  color: #008ec4;
   font-weight: bold;
 }
 
@@ -1605,6 +1605,18 @@ Icons
 </div>
 </section>
 <section id="cleaning" class="panel">
+<h4>🟢 Cleaning</h4>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>starwars</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>species</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>mutate</span><span class='op'>(</span>species <span class='op'>=</span> <span class='fu'>fct_lump</span><span class='op'>(</span><span class='va'>species</span>, n <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>count</span><span class='op'>(</span><span class='va'>species</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+</section>
+<section id="cleaning-1" class="panel">
 <h4>🟢 Cleaning</h4>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">

@@ -1782,8 +1782,11 @@ gtag('config', 'G-WZMEMQM0Y2');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
 body {
-  font-family: "Lato";
+  /*font-family: "Lato";*/
+  font-family: "Noto Serif JP";
   /*color: #1f1f1f;*/
   color: #404040;
   font-size: 16px;
@@ -1791,10 +1794,11 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Noto Serif JP";
+  font-family: 'Noto Serif JP';
+  /*font-family: 'Source Code Pro', monospace;*/
   letter-spacing: 2px;
   line-height: 2rem; /* increases, so wrapping headers don't overlap */
-  color: #ca225e;
+  color: #007cab;
   font-weight: 300;
 }
 
@@ -1817,15 +1821,16 @@ d-article h2 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0));
   background-color: transparent;
   font-size: 16px;
-  font-family: "Noto Serif JP";
+  font-family: 'Source Code Pro', monospace;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #044f6b;
 }
 
 .distill-site-header .logo img{
   max-height: 40px; /* Makes logo bigger, default was 20px */
-  padding: -5px;
-  margin-top: 15px;
+  padding: -2px;
+  margin-top: 5px;
 }
 
 /* dropdown navbar color on mobile */
@@ -2084,7 +2089,7 @@ d-appendix {
 
 .bio-title {
   font-size: 28px;
-  color: #2E4A62;
+  color: #008ec4;
   font-weight: bold;
 }
 
@@ -2210,6 +2215,18 @@ Icons
 </div>
 </section>
 <section id="cleaning" class="panel">
+<h4>🟢 Cleaning</h4>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>starwars</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>species</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>mutate</span><span class='op'>(</span>species <span class='op'>=</span> <span class='fu'>fct_lump</span><span class='op'>(</span><span class='va'>species</span>, n <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>count</span><span class='op'>(</span><span class='va'>species</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+</section>
+<section id="cleaning-1" class="panel">
 <h4>🟢 Cleaning</h4>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">

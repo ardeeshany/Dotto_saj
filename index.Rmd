@@ -1,14 +1,11 @@
 ---
-title: "Data Motto"
+title: ""
 site: distill::distill_website
 listing: posts
 ---
 
-<br> <br> <br> <br> <br> <br>
-
 ```{r, child= here::here("_assets", "welcome_page.Rmd")}
 ```
 
-<br> <br> <br> <br> <br> <br>
 
 

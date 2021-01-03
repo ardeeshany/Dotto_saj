@@ -56,6 +56,16 @@ starwars %>%
 :::
 
 ::: {.panel}
+#### 🟢 Cleaning
+```{r, eval = F, echo = T}
+starwars %>%
+  filter(!is.na(species)) %>%
+  mutate(species = fct_lump(species, n = 3)) %>%
+  count(species)
+```
+:::
+
+::: {.panel}
 #### 🟠 Modeling
 :::
 
