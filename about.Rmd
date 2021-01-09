@@ -1,5 +1,5 @@
 ---
-title: "About this blog"
+title: "The Whole game"
 description: |
   Some additional details about the blog
 ---
@@ -8,4 +8,4 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-About DataMotto
+About DataMotto and its objectives.
