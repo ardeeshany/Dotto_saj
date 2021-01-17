@@ -18,24 +18,20 @@ experiencing with Data!
       <title>New York Taxi fare rate</title>
       <dc:creator>Nora Jones</dc:creator>
       <link>https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate</link>
-      <description>&lt;p&gt;A short description of the post.&lt;/p&gt;
-</description>
+      <description>A short description of the post.</description>
       <category>Visualization</category>
       <guid>https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate</guid>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" medium="image" type="image/png" width="3900" height="2400"/>
     </item>
     <item>
       <title>Analyzing COVID19 in USA</title>
       <dc:creator>Ardalan Mirshani</dc:creator>
       <link>https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa</link>
-      <description>&lt;p&gt;Analyzing Covid 19 reports&lt;/p&gt;
-</description>
+      <description>Analyzing Covid 19 reports</description>
       <category>Visualization</category>
       <category>Modeling</category>
       <guid>https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa</guid>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://www.datamotto.com/posts/R/2020-12-30-analyzing-covid19-in-usa/analyzing-covid19-in-usa_files/figure-html5/unnamed-chunk-8-1.png" medium="image" type="image/png" width="3900" height="2400"/>
     </item>
   </channel>
 </rss>

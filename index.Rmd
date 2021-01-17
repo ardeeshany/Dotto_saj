@@ -1,11 +1,21 @@
 ---
 title: ""
 site: distill::distill_website
-listing: posts
+#listing: posts
 ---
-
-```{r, child= here::here("_assets", "welcome_page.Rmd")}
+<style>
+d-title{
+display: none;
+}
+.padding{
+padding: 0px;
+}
+d-article{
+background: red;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+</style>
+```{r,  layout="l-screen-inset shaded padding"}
+htmltools::includeHTML(here::here("_assets", "firstTop.html"))
 ```
-
-
-
