@@ -1,0 +1,48 @@
+---
+#title: ""
+site: bookdown::bookdown_site
+listing: posts
+---
+
+```{r, echo=FALSE}
+htmltools::includeHTML(here::here("_assets", "firstTop.html"))
+```
+
+<!--chapter:end:index.Rmd-->
+
+---
+title: "The Whole game"
+description: |
+  Some additional details about the blog
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+DataMotto and its objectives.
+
+<!--chapter:end:about.Rmd-->
+
+---
+title: "Python Dottos:"
+site: distill::distill_website
+listing:
+  posts:
+   - Python/2020-12-30-new-york-taxi-fare-rate
+   - Python/2020-12-30-the-relation-between-fast-food-and-obesity
+---
+
+<!--chapter:end:Python.Rmd-->
+
+---
+title: "R Dottos:"
+site: distill::distill_website
+listing:
+  posts:
+   - R/2020-12-30-analyzing-covid19-in-usa
+   - R/2020-12-30-how-to-fix-column-names
+---
+
+<!--chapter:end:R.Rmd-->
+
