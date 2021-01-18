@@ -19,3 +19,7 @@ padding-bottom: 0px;
 ```{r,  layout="l-screen-inset shaded padding"}
 htmltools::includeHTML(here::here("_assets", "firstTop.html"))
 ```
+
+```{r,  layout="l-screen-inset shaded padding"}
+htmltools::includeHTML(here::here("_assets", "cart.html"))
+```
