@@ -6,28 +6,28 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\nDataMotto and its objectives.\n\n\n\n",
-      "last_modified": "2021-01-17T21:51:11-05:00"
+      "last_modified": "2021-01-18T09:18:40-05:00"
     },
     {
       "path": "index.html",
       "title": "",
       "author": [],
       "contents": "\n\nd-title{\ndisplay: none;\n}\n.padding{\npadding: 0px;\n}\nd-article{\nbackground: red;\npadding-top: 0px;\npadding-bottom: 0px;\n}\n\n\n    \n        \n            Share Efficiently\n        \n        \n            Your Data Experience\n        \n        \n            See Posts !\n        \n    \n  \n    \n  \n\n\n.glow-on-hover {\n    width: 220px;\n    height: 50px;\n    border: none;\n    outline: none;\n    color: #fff;\n    background: #111;\n    cursor: pointer;\n    position: relative;\n    z-index: 0;\n    border-radius: 10px;\n}\n\n.glow-on-hover:before {\n    content: '';\n    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);\n    position: absolute;\n    top: -2px;\n    left:-2px;\n    background-size: 400%;\n    z-index: -1;\n    filter: blur(5px);\n    width: calc(100% + 4px);\n    height: calc(100% + 4px);\n    animation: glowing 20s linear infinite;\n    opacity: 0;\n    transition: opacity .3s ease-in-out;\n    border-radius: 10px;\n}\n\n.glow-on-hover:active {\n    color: #000\n}\n\n.glow-on-hover:active:after {\n    background: transparent;\n}\n\n.glow-on-hover:before {\n    opacity: 1;\n}\n\n.glow-on-hover:after {\n    z-index: -1;\n    content: '';\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: #111;\n    left: 0;\n    top: 0;\n    border-radius: 10px;\n}\n\n@keyframes glowing {\n    0% { background-position: 0 0; }\n    50% { background-position: 400% 0; }\n    100% { background-position: 0 0; }\n}\n@media screen and (max-width: 541px) {\n.title{\n    font-size: 160%!important;\n    color: #044f6b;\n    line-height:10px; \n    font-family: 'Noto Serif JP';\n    text-align: center;\n}\n}\n.title{\n    font-size: 300%;\n    color: #044f6b;\n    line-height:10px; \n    font-family: 'Noto Serif JP';\n    text-align: center;\n}\n.upper-page {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  margin: 0;\n  overflow: hidden;\n}\n\n.hero-fullscreen {\n    padding-bottom: 310px;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    overflow: hidden;\n    background-position: center center;\n    background-repeat: no-repeat;\n    -webkit-background-size: cover;\n    background-size: cover;\n    z-index: 0;\n}\n*:after, *:before {\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n}\n.center-container {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    display: table;\n    table-layout: fixed;\n    background: none;\n}\n.center-block {\n    display: table-cell;\n    vertical-align: middle;\n}\n.center-block {\n  display: block;\n  margin-right: auto;\n  margin-left: auto;\n}\n.upper-page h2 {\n    color: #25acca;\n    font-size: 15px;\n    font-weight: 400;\n    text-align: center;\n    text-transform: uppercase;\n    font-family: 'Oswald', sans-serif;\n    margin: 30px 0;\n}\n.upper-page h1 {\n    position: relative;\n    width: 100%;\n    color: #fff;\n    font-size: 115px;\n    font-weight: 700;\n    text-align: center;\n    text-transform: uppercase;\n    font-family: 'Oswald', sans-serif;\n    margin: 0 0 30px;\n    z-index: 1;\n}\na, a:hover, a:visited, a:active, a:focus {\n    color: #fff;\n    outline: none;\n    text-decoration: none;\n    -webkit-transition: all .5s linear;\n    transition: all .5s linear;\n}\n.button {\n    position: relative;\n    width: auto;\n    height: auto;\n    color: #fff;\n    font-size: 13px;\n    font-weight: 400;\n    white-space: nowrap;\n    letter-spacing: 1px;\n    text-transform: uppercase;\n    font-family: 'Oswald', sans-serif;\n    border: 0;\n    margin: 0;\n    padding: 10px 20px;\n    background: none;\n    overflow: hidden;\n}\n.button::before {\n    content: attr(data-text);\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    padding: 10px 0;\n    -webkit-transition: transform .3s, opacity .3s cubic-bezier(.75, 0, .125, 1);\n    transition: transform .3s, opacity .3s cubic-bezier(.75, 0, .125, 1);\n}\n*:after, *:before {\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-      "last_modified": "2021-01-17T21:51:12-05:00"
+      "last_modified": "2021-01-18T09:18:41-05:00"
     },
     {
       "path": "Python.html",
       "title": "Python Dottos:",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-17T21:51:12-05:00"
+      "last_modified": "2021-01-18T09:18:42-05:00"
     },
     {
       "path": "R.html",
       "title": "R Dottos:",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-17T21:51:13-05:00"
+      "last_modified": "2021-01-18T09:18:42-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
