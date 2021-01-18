@@ -8,5 +8,5 @@ for(i in 1:length(path_posts)){
 }
 
 exportJson <- RJSONIO::toJSON(all_metadata)
-write(exportJson, "posts.json")
+write(exportJson, here::here("posts.json"))
 }
