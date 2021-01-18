@@ -1,0 +1,48 @@
+{
+ "analyzing-covid19-in-usa": {
+ "title": "Analyzing COVID19 in USA",
+"description": "Analyzing Covid 19 reports\n",
+"author": [
+ {
+ "name": "Ardalan Mirshani",
+"affiliation": "Novartis",
+"url": "https://mirshani.com" 
+} 
+],
+"date": "2020-12-03",
+"base_url": "https://www.datamotto.com",
+"output": {
+ "distill::distill_article": {
+ "self_contained": false 
+} 
+},
+"packages": [ "ggplot2", "forcats" ],
+"categories": [ "Visualization", "Modeling" ],
+"tech": [ "R", "SqL", "Python" ],
+"bibliography": "bibliography.bib",
+"draft": false,
+"twitter": {
+ "site": "@DataMotto",
+"creator": "@DataMotto" 
+} 
+},
+"new-york-taxi-fare-rate": {
+ "title": "New York Taxi fare rate",
+"description": "A short description of the post.\n",
+"author": [
+ {
+ "name": "Nora Jones",
+"url": "https://example.com/norajones" 
+} 
+],
+"date": "2021-01-12",
+"tech": "Python",
+"packages": "Matplotlib",
+"categories": "Visualization",
+"output": {
+ "distill::distill_article": {
+ "self_contained": false 
+} 
+} 
+} 
+}

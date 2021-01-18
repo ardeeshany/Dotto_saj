@@ -6,7 +6,7 @@ author:
   - name: Nora Jones
     url: https://example.com/norajones
 # preview: https://www.jfkairport.com/static/JFK/image/jfk_taxi_new.jpg
-date: "`r Sys.Date()`"
+date: 2021-01-12
 tech: [Python]
 packages: [Matplotlib]
 categories: [Visualization]
@@ -45,7 +45,7 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd
 df = pd.DataFrame(
-  np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+  np.random.randn(1000, 4), columns=["A", "B", "C", "D"]
   )
 df = df.cumsum()
 plt.figure()
@@ -63,7 +63,7 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd
 df = pd.DataFrame(
-  np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+  np.random.randn(1000, 4),  columns=["A", "B", "C", "D"]
   )
 df = df.cumsum()
 plt.figure()
