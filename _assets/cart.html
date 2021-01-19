@@ -1,33 +1,16 @@
 <html>
   <body>
-    <div id="app">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card-body border-danger">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-            {{items}}
+    <div id="app" class="mb-5">
+      <div class="container">
+        <div class="row justify-content-center d-flex">
+          <div v-for="(item, index) in postData" :key="index" class="col-md-4 mb-md-0 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <span class="badge badge-info bg-info">{{item.categories}}</span>
+                <p class="card-text mt-2">{{item.description}}</p>
+                <img src="../images/R_icon.png" style="width:2em;" />
+              </div>
           </div>
         </div>
       </div>
@@ -47,15 +30,15 @@
       el: '#app',
       data: {
         items: null,
-        message: 'Hello Vue!'
+        postData: null
       },
       mounted() {
         $.get( '../posts.json', ( data ) => {
-          this.items = data;
-          console.log(this.items)
+          const values = Object.values(data)
+          this.postData = values
+          console.log(this.postData)
         })
       }
     })
- 
   </script>
 </html>
