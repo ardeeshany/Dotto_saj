@@ -9,7 +9,7 @@
 } 
 ],
 "date": "2021-01-12",
-"tech": "Python",
+"tech": "Sql",
 "packages": "Matplotlib",
 "categories": "Visualization",
 "output": {
@@ -28,7 +28,7 @@
 } 
 ],
 "date": "2021-01-12",
-"tech": "Python",
+"tech": [ "Python", "Sql" ],
 "packages": "Matplotlib",
 "categories": "Visualization",
 "output": {
