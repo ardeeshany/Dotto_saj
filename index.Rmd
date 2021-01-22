@@ -26,3 +26,7 @@ htmltools::includeHTML(here::here("_assets", "firstTop.html"))
 htmltools::includeHTML(here::here("_assets", "cart.html"))
 ```
 
+```{r,  layout="l-screen-inset shaded padding"}
+htmltools::includeHTML(here::here("_assets", "footer.html"))
+```
+
