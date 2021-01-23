@@ -2282,8 +2282,56 @@ padding-bottom: 0px;
 		</script>
 	</body>
 </html><html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <style>
+      div.front:before {
+        border-top-color: #288FBD;
+        border-left-color: #288FBD;
+        z-index: 2;
+      }
+      div.front:before, div.front:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-width: 160px;
+          border-style: solid;
+          border-color: transparent;
+      }
+      div.front {
+        background-color: white;
+        z-index: 0;
+      }
+      div.front-button:before, div.front-button:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 220px;
+          left: 216px;
+          border-width: 50px;
+          border-style: solid;
+          border-color: transparent;
+      }
+      div.front-button:before {
+        border-bottom-color: #ffeb3b2b!important;
+        border-right-color: #1e88e530;
+        z-index: 2;
+      }
+      .cart-hover:hover {
+        outline: 0!important;
+        box-shadow: none!important;
+      }
+      .yellow {
+        background-color: #f1ef1c;
+        grid-column: 1 / span 9;
+        grid-row: 1 / span 3;
+      }
+    </style>
+  </head>
   <body>
-    <div id="app" class="mb-5">
+    <div id="app">
       <div v-if="initializing">
         initiallize....
       </div>
@@ -2305,17 +2353,31 @@ padding-bottom: 0px;
               <input type="text" v-model="search.title" class="form-control" >
             </div>
           </form>
-
-          <div v-for="(item, index) in filter" :key="index" class="col-md-4 mb-md-0 mb-2">
-            <div class="card">
-              <div class="card-body">
+          <!-- <div class="row pb-5 justify-content-center">
+            <div v-for="(item, index) in filter" :key="index" class="card col-md-4 p-3 mb-5 bg-white rounded border-0" style="width: 18rem;">
+              <div class="card-body front-button" style="padding: 5px;">
+                <div class="mb-3">
+                  <img src="../images/R_icon.png" style="max-height: 35px; max-width: 50px;"/>
+                </div>
                 <h5 class="card-title">{{item.title}}</h5>
                 <span class="badge badge-info bg-info">{{item.categories}}</span>
-                <p class="card-text mt-2">{{item.description}}</p>
-                <!-- <img src="../images/R_icon.png" /> -->
+                <p class="card-text">{{item.description}}</p>
+                <button type="button" class="btn btn-link text-info btn-sm p-0" style="text-decoration: none;">More Info</button>
               </div>
+            </div>
+          </div> -->
+          <div v-for="(item, index) in filter" :key="index" class="card front-button col-md-4 p-3 mb-5 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
+            <div class="card-body sm-mr-0 mr-5 shadow p-3 mb-5 bg-white rounded" style="height: 19rem;">
+              <div class="mb-3">
+                <img src="../images/R_icon.png" style="max-height: 35px; max-width: 50px;"/>
+              </div>
+              <h5 class="card-title">{{item.title}}</h5>
+              <span class="badge badge-info bg-info">{{item.categories}}</span>
+              <p class="card-text">{{item.description}}</p>
+              <button type="button" class="btn btn-link text-info btn-sm p-0" style="text-decoration: none; margin-top: 70px;">More Info</button>
+            </div>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </body>
@@ -2425,7 +2487,7 @@ padding-bottom: 0px;
     margin-left: auto;
   }
   .foote_bottom_ul_amrc li { display:inline;}
-  .foote_bottom_ul_amrc li a { color:#fff; margin:0 12px; border: 0;}
+  .foote_bottom_ul_amrc li a { color:#fff; margin:0 12px;   border: 0;}
   
   .social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
   .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
