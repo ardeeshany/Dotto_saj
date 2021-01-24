@@ -1,52 +1,4 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <style>
-      div.front:before {
-        border-top-color: #288FBD;
-        border-left-color: #288FBD;
-        z-index: 2;
-      }
-      div.front:before, div.front:after {
-          display: block;
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          border-width: 160px;
-          border-style: solid;
-          border-color: transparent;
-      }
-      div.front {
-        background-color: white;
-        z-index: 0;
-      }
-      div.front-button:before, div.front-button:after {
-          display: block;
-          content: '';
-          position: absolute;
-          top: 220px;
-          left: 216px;
-          border-width: 50px;
-          border-style: solid;
-          border-color: transparent;
-      }
-      div.front-button:before {
-        border-bottom-color: #ffeb3b2b!important;
-        border-right-color: #1e88e530;
-        z-index: 2;
-      }
-      .cart-hover:hover {
-        outline: 0!important;
-        box-shadow: none!important;
-      }
-      .yellow {
-        background-color: #f1ef1c;
-        grid-column: 1 / span 9;
-        grid-row: 1 / span 3;
-      }
-    </style>
-  </head>
   <body>
     <div id="app">
       <div v-if="initializing">
@@ -70,31 +22,27 @@
               <input type="text" v-model="search.title" class="form-control" >
             </div>
           </form>
-          <!-- <div class="row pb-5 justify-content-center">
-            <div v-for="(item, index) in filter" :key="index" class="card col-md-4 p-3 mb-5 bg-white rounded border-0" style="width: 18rem;">
-              <div class="card-body front-button" style="padding: 5px;">
-                <div class="mb-3">
-                  <img src="../images/R_icon.png" style="max-height: 35px; max-width: 50px;"/>
+
+          <div class="row">
+            <div v-for="(item, index) in filter" :key="index" class="card-deck col-md-4 p-3 mb-3 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" style="height: 176px;" src="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" alt="Card image cap">
+                <div class="card-body shadow rounded border-0">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <span class="text-muted"> <em> {{item.date}} </em> </span>
+                  <div>
+                    <span v-if="item.categories" class="badge card-text badge-info bg-info">{{item.categories}}</span>
+                    <span v-if="item.packages" class="badge card-text badge-info bg-warning">{{item.packages}}</span>
+                  </div>
+                  <p class="card-text">{{item.description}}</p>
                 </div>
-                <h5 class="card-title">{{item.title}}</h5>
-                <span class="badge badge-info bg-info">{{item.categories}}</span>
-                <p class="card-text">{{item.description}}</p>
-                <button type="button" class="btn btn-link text-info btn-sm p-0" style="text-decoration: none;">More Info</button>
+                <div class="card-footer bg-white text-center">
+                  <a :href="postUrl(item)" class="btn btn-sm  btn-outline-info">More detail <i class="fas fa-arrow-right"></i></a>
+                </div>
               </div>
-            </div>
-          </div> -->
-          <div v-for="(item, index) in filter" :key="index" class="card front-button col-md-4 p-3 mb-5 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
-            <div class="card-body sm-mr-0 mr-5 shadow p-3 mb-5 bg-white rounded" style="height: 19rem;">
-              <div class="mb-3">
-                <img src="../images/R_icon.png" style="max-height: 35px; max-width: 50px;"/>
-              </div>
-              <h5 class="card-title">{{item.title}}</h5>
-              <span class="badge badge-info bg-info">{{item.categories}}</span>
-              <p class="card-text">{{item.description}}</p>
-              <button type="button" class="btn btn-link text-info btn-sm p-0" style="text-decoration: none; margin-top: 70px;">More Info</button>
-            </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </body>
@@ -102,6 +50,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -152,8 +101,12 @@
             }
             return true
           })
-          console.log(test)
           return test
+        }
+      },
+      methods: {
+        postUrl(post){
+          return './posts' + post.date + '-' + (post.title.toLocaleLowerCase()).replace(/ /g,"-")
         }
       }
     })
