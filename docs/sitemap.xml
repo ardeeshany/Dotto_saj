@@ -2,38 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://www.datamotto.com/about.html</loc>
-    <lastmod>2021-01-10T23:24:13+03:30</lastmod>
+    <lastmod>2021-01-18T09:22:55-05:00</lastmod>
   </url>
   <url>
     <loc>https://www.datamotto.com/</loc>
-    <lastmod>2021-01-25T02:15:38+03:30</lastmod>
+    <lastmod>2021-01-26T23:45:46-05:00</lastmod>
   </url>
   <url>
     <loc>https://www.datamotto.com/Python.html</loc>
-    <lastmod>2021-01-10T23:24:12+03:30</lastmod>
+    <lastmod>2021-01-10T01:56:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://www.datamotto.com/R.html</loc>
-    <lastmod>2021-01-10T23:24:12+03:30</lastmod>
-  </url>
-  <url>
-    <loc>https://www.datamotto.com/posts/2020-12-30-analyzing-covid19-in-usa/2020-12-30-new-york-taxi-fare-rate/</loc>
-    <lastmod>2021-01-25T00:17:25+03:30</lastmod>
-  </url>
-  <url>
-    <loc>https://www.datamotto.com/posts/2020-12-30-new-york-taxi-fare-rate copy 2/</loc>
-    <lastmod>2021-01-25T00:17:52+03:30</lastmod>
-  </url>
-  <url>
-    <loc>https://www.datamotto.com/posts/2020-12-30-new-york-taxi-fare-rate copy/</loc>
-    <lastmod>2021-01-25T00:17:17+03:30</lastmod>
+    <lastmod>2021-01-10T01:56:33-05:00</lastmod>
   </url>
   <url>
     <loc>https://www.datamotto.com/posts/2020-12-30-new-york-taxi-fare-rate/</loc>
-    <lastmod>2021-01-18T22:05:41+03:30</lastmod>
+    <lastmod>2021-01-26T23:52:12-05:00</lastmod>
   </url>
   <url>
     <loc>https://www.datamotto.com/posts/2020-12-30-analyzing-covid19-in-usa/</loc>
-    <lastmod>2021-01-18T22:05:41+03:30</lastmod>
+    <lastmod>2021-01-26T23:51:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.datamotto.com/posts/2020-12-31-la-taxi-fare-rate/</loc>
+    <lastmod>2021-01-26T23:53:18-05:00</lastmod>
   </url>
 </urlset>

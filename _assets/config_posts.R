@@ -7,6 +7,6 @@ for(i in 1:length(path_posts)){
   all_metadata[[i]] <- rmarkdown::yaml_front_matter(rmd_path)
 }
 
-exportJson <- RJSONIO::toJSON(all_metadata)
+exportJson <- RJSONIO::toJSON(all_metadata, asIs = T)
 write(exportJson, here::here("posts.json"))
 }

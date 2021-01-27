@@ -13,6 +13,7 @@ categories: [Visualization]
 output:
   distill::distill_article:
     self_contained: false
+preview: "https://bookdown.org/kdonovan125/ibis_data_analysis_r4/_main_files/figure-html/ggplot_ex_6-1.png"
 ---
 
 ::: {.l-page}

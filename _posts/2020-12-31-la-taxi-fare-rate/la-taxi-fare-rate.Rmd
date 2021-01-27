@@ -1,5 +1,5 @@
 ---
-title: "New York Taxi fare rate"
+title: "LA Taxi fare rate"
 description: |
   A short description of the post.
 author:
@@ -14,7 +14,7 @@ categories: [Visualization]
 output:
   distill::distill_article:
     self_contained: false
-preview: "unnamed-chunk-9-1.png"
+preview: "unnamed-chunk-4-1.png"
 ---
 
 ::: {.l-page}
@@ -65,7 +65,7 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd
 df = pd.DataFrame(
-  np.random.randn(1000, 4),  columns=["A", "B", "C", "D"]
+  np.random.randn(1000, 2),  columns=["C", "D"]
   )
 df = df.cumsum()
 plt.figure()
