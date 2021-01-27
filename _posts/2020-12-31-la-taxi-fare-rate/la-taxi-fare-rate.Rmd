@@ -14,7 +14,6 @@ categories: [Visualization]
 output:
   distill::distill_article:
     self_contained: false
-preview: "unnamed-chunk-4-1.png"
 ---
 
 ::: {.l-page}

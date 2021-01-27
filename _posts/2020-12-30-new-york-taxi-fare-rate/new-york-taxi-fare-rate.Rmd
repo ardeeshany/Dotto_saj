@@ -14,7 +14,7 @@ categories: [Visualization]
 output:
   distill::distill_article:
     self_contained: false
-preview: "unnamed-chunk-9-1.png"
+preview: "new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png"
 ---
 
 ::: {.l-page}
