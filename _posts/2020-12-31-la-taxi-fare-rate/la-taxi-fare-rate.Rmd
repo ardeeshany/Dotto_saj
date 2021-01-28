@@ -1,5 +1,5 @@
 ---
-title: "Cvovid 19 Analysis"
+title: "LA Taxi fare rate"
 description: |
   A short description of the post.
 author:
@@ -7,13 +7,13 @@ author:
     url: https://example.com/norajones
 # preview: https://www.jfkairport.com/static/JFK/image/jfk_taxi_new.jpg
 date: 2021-01-12
-tech: [Sql]
+slug: 'post3'
+tech: [Python,Sql]
 packages: [Matplotlib]
 categories: [Visualization]
 output:
   distill::distill_article:
     self_contained: false
-preview: "https://bookdown.org/kdonovan125/ibis_data_analysis_r4/_main_files/figure-html/ggplot_ex_6-1.png"
 ---
 
 ::: {.l-page}
@@ -64,7 +64,7 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd
 df = pd.DataFrame(
-  np.random.randn(1000, 4),  columns=["A", "B", "C", "D"]
+  np.random.randn(1000, 2),  columns=["C", "D"]
   )
 df = df.cumsum()
 plt.figure()
