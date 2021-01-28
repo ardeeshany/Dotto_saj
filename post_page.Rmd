@@ -1,0 +1,31 @@
+---
+title: ""
+site: distill::distill_website
+#listing: posts
+---
+<style>
+d-title{
+display: none;
+}
+.padding{
+padding: 0px;
+}
+d-article{
+background: red;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+.shaded {
+    border-top: 0!important;
+    border-bottom: 0!important;
+}
+</style>
+
+```{r,  layout="l-screen-inset shaded padding"}
+htmltools::includeHTML(here::here("_assets", "post.html"))
+```
+  
+```{r,  layout="l-screen-inset shaded padding"}
+htmltools::includeHTML(here::here("_assets", "footer.html"))
+```
+
