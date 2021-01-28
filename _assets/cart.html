@@ -6,28 +6,29 @@
       </div>
       <div v-else class="container">
         <div class="row justify-content-center d-flex">
-          <form>
-            <div class="form-check">
-              <input v-model="search.python" type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">python</label>
+          <div class="btn-group dropright p-4">
+            <button v-on:click="open = !open" type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #0f2e3d; margin-bottom: 54px;">
+              <i class="fas fa-filter"></i>
+              Filter
+            </button>
+            <div v-if="open" class="p-3 border rounded ml-1">
+              <div class="form-check">
+                <input v-model="search.python" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">python</label>
+              </div>
+  
+              <div class="form-check">
+                <input v-model="search.sql" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Sql</label>
+              </div>
             </div>
-
-            <div class="form-check">
-              <input v-model="search.sql" type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Sql</label>
-            </div>
-
-            <div class="form-group">
-              <label>title :</label>
-              <input type="text" v-model="search.title" class="form-control" >
-            </div>
-          </form>
+          </div>
 
           <div class="row justify-content-center">
             <div v-for="(item, index) in filter" :key="index" class="card-deck col-md-4 p-3 mb-3 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
-              <div class="card" style="width: 18rem;">
+              <div class="card box cursor-pointer" style="width: 18rem;">
                 <img class="card-img-top" style="height: 176px;" src="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" alt="Card image cap">
-                <div class="card-body shadow rounded border-0">
+                <div class="card-body rounded border-0">
                   <h5 class="card-title">{{item.title}}</h5>
                   <span class="text-muted">
                     <em> {{item.date}} </em> 
@@ -42,8 +43,25 @@
                   </div>
                   <p class="card-text">{{item.description}}</p>
                 </div>
-                <div class="card-footer bg-white text-center">
-                  <a :href="postUrl(item)" class="btn btn-sm  btn-outline-info">More detail <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div v-for="(item, index) in filter" :key="index" class="card-deck col-md-4 p-3 mb-3 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
+              <div class="card box cursor-pointer" style="width: 18rem;">
+                <img class="card-img-top" style="height: 176px;" src="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" alt="Card image cap">
+                <div class="card-body rounded border-0">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <span class="text-muted">
+                    <em> {{item.date}} </em> 
+                    <i v-if='showR(item.tech)' class="fab fa-r-project"></i>
+                    <i v-if='showPython(item.tech)' class="fab fa-python"></i>  
+                    <i v-if="showSql(item.tech)" class="fas fa-database"></i>        
+                  </span>
+            
+                  <div>
+                    <span v-if="item.categories" class="badge card-text badge-info bg-info">{{item.categories}}</span>
+                    <span v-if="item.packages" class="badge card-text badge-info bg-warning">{{item.packages}}</span>
+                  </div>
+                  <p class="card-text">{{item.description}}</p>
                 </div>
               </div>
             </div>
@@ -53,6 +71,12 @@
     </div>
   </body>
   <head>
+    <style>
+      .cursor-pointer {cursor: pointer;}
+      .box:hover{
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+      }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -67,6 +91,7 @@
     var app = new Vue({
       el: '#app',
       data: {
+        open: false,
         initializing: true,
         items: null,
         test: "Visualization",

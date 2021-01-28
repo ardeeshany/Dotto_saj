@@ -11,16 +11,16 @@ display: none;
 padding: 0px;
 }
 d-article{
-background: red;
+background: #0f2e3d;
 padding-top: 0px;
 padding-bottom: 0px;
 }
 .shaded {
+    background: #0f2e3d;
     border-top: 0!important;
     border-bottom: 0!important;
 }
 </style>
-
 ```{r,  layout="l-screen-inset shaded padding"}
 htmltools::includeHTML(here::here("_assets", "firstTop.html"))
 htmltools::includeHTML(here::here("_assets", "cart.html"))

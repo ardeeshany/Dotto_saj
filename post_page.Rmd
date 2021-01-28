@@ -11,7 +11,7 @@ display: none;
 padding: 0px;
 }
 d-article{
-background: red;
+background: #ffff;
 padding-top: 0px;
 padding-bottom: 0px;
 }

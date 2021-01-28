@@ -1748,226 +1748,12 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   gtag('config', 'G-WZMEMQM0Y2');
   </script>
   <style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:300, 300i&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
-  
-  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
-  
-  body {
-    /*font-family: "Lato";*/
-    font-family: "Noto Serif JP";
-    /*color: #1f1f1f;*/
-    color: #404040;
-    font-size: 16px;
+  .title{
+    padding-top: 0px!important;
+    margin-top: 21px!important;
   }
-  
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Serif JP';
-    /*font-family: 'Source Code Pro', monospace;*/
-    letter-spacing: 2px;
-    line-height: 2rem; /* increases, so wrapping headers don't overlap */
-    color: #007cab;
-    font-weight: 300;
-  }
-  
-  d-title {
-    padding-top: 13rem; /*so that navbar doesn't overlap fixed title */
-  }
-  
-  d-title h1,
-  d-article h2 {
-  	font-weight: 300;
-  }
-  
-  
-  /* --------------Navbar-------------------- */
-  
-  
-  /* background-image for fade-to-white color of navbar */
-  .distill-site-header{
-    padding: 0px 0px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0));
-    background-color: transparent;
-    font-size: 16px;
-    font-family: 'Source Code Pro', monospace;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #044f6b;
-  }
-  
-  .distill-site-header .logo img{
-    max-height: 40px; /* Makes logo bigger, default was 20px */
-    padding: -2px;
-    margin-top: 5px;
-  }
-  
-  /* dropdown navbar color on mobile */
-  
-  @media screen and (max-width: 768px){
-    .distill-site-header.responsive {
-        background: rgba(255,255,255,0.99);
-    }
-  }
-  
-  
-  /* Navbar Links with Animated Hover */
-  
-  
-  .distill-site-header a { /* A normal link in navbar */
-    color: #1f1f1f;
-    display: inline-block;  /* This line and line below is so pseudo-element will work later */
-    position: relative;
-    text-decoration: none;
-    padding-left: 0px; /* overrides default so animation looks Ok */
-    padding-right: 0px; /* overrides default so animation looks Ok */
-    margin: 24px 14px; /* replaces default padding values for margin values */
-  }
-  
-  
-  .distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
-    color: #ca225e;
-    padding-left: 0px; /* overrides default so animation looks Ok */
-    padding-right: 0px; /* overrides default so animation looks Ok */
-    margin: 10px 14px; /* replaces default padding values for margin values */
-  }
-  
-  .distill-site-header a:before { /*Creates pseudoelement line under link */
-    background-color: #787878;
-    content: '';
-    /* height: 1px;*/
-    position: absolute;
-    /* bottom: -1px;
-    /*transition: width 0.3s ease-in-out; /* animate the width */
-    width: 100%;
-  }
-  
-  .distill-site-header a:after{ /*Creates pseudoelement line under link */
-    background-color: #ca225e;
-    content: '';
-    /* height: 1px;*/
-    position: absolute;
-    /* bottom: -1px;
-    /*transition: width 0.3s ease-in-out; /* animate the width */
-    width: 100%;
-  }
-  
-  
-  .distill-site-header a:hover:before {
-    width: 0; /* Shrinks width of pseudoelement to 0 when hovered */
-  }
-  
-  /* Makes sure animation does NOT apply to Title or Logo links (or toggle on mobile) */
-  
-  .distill-site-header a.title:before, .distill-site-nav a.logo:before, a.nav-toggle:before {
-    display: none;
-  }
-  
-  .distill-site-header a.title, .distill-site-nav a.logo {
-    padding: 10px 0px;
-    margin: 10px 14px;
-  }
-  
-  
-  /* No navbar links on mobile except title and nav-toggle */
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown {
-      display: none;
-    }
-  
-    .distill-site-header a.title, .distill-site-header a.nav-toggle {
-      display: inline-block;
-      padding: 10px 0px;
-      margin: 10px 14px;
-    }
-  }
-  
-  /* -------------Appendix---------------- */
-  
-  d-appendix {
-    background-color: #fdf7f9;
-    border-top: none !important;
-    color: #1a162d !important;
-  }
-  
-  /* -------------Footer------------------*/
-  
-  .distill-site-footer {
-    color: #7e7b88;
-    background-color: #ca225e3d;
-    margin-top: 0px;
-    padding: 50px 20px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 12px;
-  
-  }
-  
-  d-byline div.byline.grid div p,
-  d-byline,
-  d-byline p,
-  p.author,
-  p.affiliation,
-  d-byline h3,
-  .d-toc,
-  .d-toc-header,
-  .d-toc ul,
-  d-appendix p {
-  	font-size: 0.9rem;
-  }
-  
-  d-appendix h3 + * {
-  	margin-top: 1.5em !important;
-  }
-  
-  /*----- COLORED LIST BULLET----*/
-  
-  d-article ul {
-    list-style: none; /* Remove default bullets */
-  }
-  
-  d-article ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #94a2af; /* Change the color */
-    font-weight: normal; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1.5em; /* Also needed for space (tweak if needed) */
-    margin-left: -1.5em; /* Also needed for space (tweak if needed) */
-  }
-  
-  d-article ul > li > p {
-    display: inline; /* to have content show up next to bullet */
-    line-height: .2em;
-  }
-  
-  d-article ul > li { /*to add back in space between bullet items that I took away by making p display inline */
-    margin-top: .2em;
-    margin-bottom: .2em;
-  }
-  
-  .d-toc ul li::before {
-    content: " ";  /* Remove toc bullets */
-  }
-  
-  d-footnote {
-      margin-left: -30px;
-  }
-  
-  
-  /*----- Appendix ----*/
-  
-  d-appendix {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  
-  /*----- footer ----*/
-  
-  .distill-site-footer {
-    background-color: white;
+  .logo{
+    display: none!important
   }
   
   </style>
@@ -2033,11 +1819,12 @@ display: none;
 padding: 0px;
 }
 d-article{
-background: red;
+background: #0f2e3d;
 padding-top: 0px;
 padding-bottom: 0px;
 }
 .shaded {
+    background: #0f2e3d;
     border-top: 0!important;
     border-bottom: 0!important;
 }
@@ -2046,65 +1833,6 @@ padding-bottom: 0px;
 <p><html>
 	<head>
 		<style>
-			.glow-on-hover {
-					width: 220px;
-					height: 50px;
-					border: none;
-					outline: none;
-					color: #fff;
-					background: #111;
-					cursor: pointer;
-					position: relative;
-					z-index: 0;
-					border-radius: 10px;
-			}
-			
-			.glow-on-hover:before {
-					content: '';
-					background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-					position: absolute;
-					top: -2px;
-					left:-2px;
-					background-size: 400%;
-					z-index: -1;
-					filter: blur(5px);
-					width: calc(100% + 4px);
-					height: calc(100% + 4px);
-					animation: glowing 20s linear infinite;
-					opacity: 0;
-					transition: opacity .3s ease-in-out;
-					border-radius: 10px;
-			}
-			
-			.glow-on-hover:active {
-					color: #000
-			}
-			
-			.glow-on-hover:active:after {
-					background: transparent;
-			}
-			
-			.glow-on-hover:before {
-					opacity: 1;
-			}
-			
-			.glow-on-hover:after {
-					z-index: -1;
-					content: '';
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					background: #111;
-					left: 0;
-					top: 0;
-					border-radius: 10px;
-			}
-			
-			@keyframes glowing {
-					0% { background-position: 0 0; }
-					50% { background-position: 400% 0; }
-					100% { background-position: 0 0; }
-			}
 			@media screen and (min-width: 541px) {
 				.hero-fullscreen{
 					padding-bottom: 0;
@@ -2130,12 +1858,11 @@ padding-bottom: 0px;
 			}
 			.title{
 					font-size: 200%;
-					color: #044f6b;
+					color: #ffff;
 					font-family: 'Noto Serif JP';
 					text-align: center;
 			}
 			.upper-page {
-				margin-top: -87px;
 				position: relative;
 				width: 100%;
 				height: 100%;
@@ -2145,7 +1872,8 @@ padding-bottom: 0px;
 			}
 			
 			.hero-fullscreen {
-					padding-bottom: 310px;
+					background: #0f2e3d;
+					padding-bottom: 230px;
 					width: 100%;
 					height: 100%;
 					top: 0;
@@ -2249,9 +1977,8 @@ padding-bottom: 0px;
 	<body>
 		<div id="home">
 			<div class="upper-page">
-				<div class="hero-fullscreen" 
-					v-bind:style="image ? 'background-image: url(../images/toppage.gif);' :'background-image: url(../images/toppage2.jpg);'">
-						<h6 class="title" style="margin-top: 302px;">
+				<div class="hero-fullscreen" >
+						<h6 class="title" style="margin-top: 170px!important;">
 							Share Efficiently
 									</h6>
 									<h6 class="title">
@@ -2261,8 +1988,7 @@ padding-bottom: 0px;
 										<button class="glow-on-hover" type="button">See Posts !</button>
 									</div> -->
 								</div>
-						<div>
-				</div>    
+					<img class="d-sm-block d-none" src="../images/banner.png" alt="Card image cap" style="margin-top: -11.5%;">				  
 			</div>
 		</div>
 
@@ -2288,28 +2014,29 @@ padding-bottom: 0px;
       </div>
       <div v-else class="container">
         <div class="row justify-content-center d-flex">
-          <form>
-            <div class="form-check">
-              <input v-model="search.python" type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">python</label>
+          <div class="btn-group dropright p-4">
+            <button v-on:click="open = !open" type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #0f2e3d; margin-bottom: 54px;">
+              <i class="fas fa-filter"></i>
+              Filter
+            </button>
+            <div v-if="open" class="p-3 border rounded ml-1">
+              <div class="form-check">
+                <input v-model="search.python" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">python</label>
+              </div>
+  
+              <div class="form-check">
+                <input v-model="search.sql" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Sql</label>
+              </div>
             </div>
-
-            <div class="form-check">
-              <input v-model="search.sql" type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Sql</label>
-            </div>
-
-            <div class="form-group">
-              <label>title :</label>
-              <input type="text" v-model="search.title" class="form-control" >
-            </div>
-          </form>
+          </div>
 
           <div class="row justify-content-center">
             <div v-for="(item, index) in filter" :key="index" class="card-deck col-md-4 p-3 mb-3 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
-              <div class="card" style="width: 18rem;">
+              <div class="card box cursor-pointer" style="width: 18rem;">
                 <img class="card-img-top" style="height: 176px;" src="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" alt="Card image cap">
-                <div class="card-body shadow rounded border-0">
+                <div class="card-body rounded border-0">
                   <h5 class="card-title">{{item.title}}</h5>
                   <span class="text-muted">
                     <em> {{item.date}} </em> 
@@ -2324,8 +2051,25 @@ padding-bottom: 0px;
                   </div>
                   <p class="card-text">{{item.description}}</p>
                 </div>
-                <div class="card-footer bg-white text-center">
-                  <a :href="postUrl(item)" class="btn btn-sm  btn-outline-info">More detail <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div v-for="(item, index) in filter" :key="index" class="card-deck col-md-4 p-3 mb-3 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
+              <div class="card box cursor-pointer" style="width: 18rem;">
+                <img class="card-img-top" style="height: 176px;" src="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" alt="Card image cap">
+                <div class="card-body rounded border-0">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <span class="text-muted">
+                    <em> {{item.date}} </em> 
+                    <i v-if='showR(item.tech)' class="fab fa-r-project"></i>
+                    <i v-if='showPython(item.tech)' class="fab fa-python"></i>  
+                    <i v-if="showSql(item.tech)" class="fas fa-database"></i>        
+                  </span>
+            
+                  <div>
+                    <span v-if="item.categories" class="badge card-text badge-info bg-info">{{item.categories}}</span>
+                    <span v-if="item.packages" class="badge card-text badge-info bg-warning">{{item.packages}}</span>
+                  </div>
+                  <p class="card-text">{{item.description}}</p>
                 </div>
               </div>
             </div>
@@ -2335,6 +2079,12 @@ padding-bottom: 0px;
     </div>
   </body>
   <head>
+    <style>
+      .cursor-pointer {cursor: pointer;}
+      .box:hover{
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+      }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -2349,6 +2099,7 @@ padding-bottom: 0px;
     var app = new Vue({
       el: '#app',
       data: {
+        open: false,
         initializing: true,
         items: null,
         test: "Visualization",
@@ -2432,7 +2183,7 @@ padding-bottom: 0px;
     display: none!important;
   }
   .col_white_amrc { color:#FFF;}
-  footer {width:100%; background-image: linear-gradient(to right, #007cba , #fdd835); min-height:250px; padding:60px 0px 25px 0px ;}
+  footer {width:100%; background: #0F2E3D; min-height:162px; padding:60px 0px 25px 0px ;}
   .pt2 { padding-top:40px ; margin-bottom:20px ;}
   footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
   .mb10 { padding-bottom:15px ;}
@@ -2472,15 +2223,11 @@ padding-bottom: 0px;
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <!--footer starts from here-->
-<footer class="footer">
+<footer class="footer py-2">
 <div class="container">
 <ul class="foote_bottom_ul_amrc">
 <li><a href="/">Home</a></li>
 <li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Pricing</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Contact</a></li>
 </ul>
 <!--foote_bottom_ul_amrc ends here-->
 <p class="text-center">Copyright @2021 | Designed With by Data Motto</p>
@@ -2488,6 +2235,7 @@ padding-bottom: 0px;
 <ul class="social_footer_ul">
 <li><a href="https://github.com/ardeeshany/DataMotto.github.io"><i class="fab fa-github"></i></a></li>
 <li><a href="https://app.slack.com/client/T01HNRM6JTG/G01J57QQS6S"><i class="fab fa-slack-hash"></i></a></li>
+<li><a href="https://app.slack.com/client/T01HNRM6JTG/G01J57QQS6S"><i class="fab fa-twitter"></i></a></li>
 <!-- <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
 <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li> -->
 </ul>

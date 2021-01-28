@@ -58,6 +58,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: false
+    #css: navStyle.css
     css: mystyle.css
     # includes:
     #   in_header: header.html
