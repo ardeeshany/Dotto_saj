@@ -79,7 +79,7 @@
       },
       created() {
         axios
-        .get( '../posts.json').then(item => {
+        .get( '../docs/posts.json').then(item => {
           this.initializing = false
           const values = Object.values(item.data)
           values.map(res => {

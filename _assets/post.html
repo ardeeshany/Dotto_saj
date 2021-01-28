@@ -1,0 +1,177 @@
+<html>
+  <body>
+    <div id="app" style="padding-top: 100px;">  
+      <div class="container" style="max-width: 1285px;">
+        <div class="row">
+          <div class="col-4 mt-4">
+            <div class="list-group">
+              <a v-for="(item, index) in postData" :key="index" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">{{item.title}}</h5>
+                </div>
+                <small>{{item.date}}</small>
+              </a>
+            </div>
+          </div>
+          <div class="col-8">
+              <div class="row">
+                <div class="col-6">
+                  <h3 class="text-info">New York Taxi fare rate</h3>  
+                  <p class="text-muted mb-1">A short description of the post.</p>
+                  <p class="text-muted"><small>Author: Nora Jones, Jan 03 2021</small></p>
+                </div>
+                <div class="col-6 mt-4">
+                  <div class="mb-2">
+                    <i class="fab text-muted fa-python mr-1"></i> 
+                    Python
+                  </div>
+                  <div class="mb-2">
+                    <i class="fas fa-box-open text-muted mr-1"></i>
+                    Matplotlib
+                  </div>
+                  <div>
+                    <i class="fas fa-adjust text-muted mr-1"></i>
+                    Visualization
+                  </div>
+                </div>
+              </div>
+            <div class="card col-11 border border-info mb-5">
+              <div class="card-body p-0 mx-auto">
+                <ul class="dis-b hooper-list list-group border-0 list-group-horizontal-lg justify-content-center">
+                  <li v-on:click="changeTab('Data')" :class="Data ? 'shadow text-danger' : ''" class="box inline cursor-pointer list-group-item border-0"></i><i class="fas mr-2 fa-circle"></i>Data</li>
+                  <li v-on:click="changeTab('Intro')" :class="Intro ? 'shadow text-success' : ''" class="box inline cursor-pointer list-group-item border-0"><i class="fas mr-2 fa-circle"></i>Intro</li>
+                  <li v-on:click="changeTab('Cleaning')" :class="Cleaning ? 'shadow text-warning' : ''" class="box inline cursor-pointer list-group-item border-0"><i class="fas mr-2 fa-circle"></i>Visualization</li>
+                  <li v-on:click="changeTab('Visualization')" :class="Visualization ? 'shadow text-primary' : ''" class="box inline cursor-pointer list-group-item border-0"><i class="fas mr-2 fa-circle"></i>Cleaning</li>
+                </ul>
+              </div>
+              <hr class="mt-0 mb-2 text-muted">
+              <div v-if="Data">
+                <pre>
+                  import matplotlib.pyplot as plt
+                  import numpy as np 
+                  import pandas as pd
+                  df = pd.DataFrame(
+                    np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+                    )
+                  df = df.cumsum()
+                  plt.figure()
+                  df.plot()
+                  plt.legend(loc='best')
+                </pre>
+              </div>
+              <div v-if="Intro">
+                <img src="https://www.datamotto.com/posts/python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" width="624" data-distill-preview="1" style="max-width: 100%; width: 624px;">
+              </div>
+              <div v-if="Visualization">
+                <pre>
+                  import matplotlib.pyplot as plt
+                  import numpy as np 
+                  import pandas as pd
+                  df = pd.DataFrame(
+                    np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+                    )
+                  df = df.cumsum()
+                  plt.figure()
+                  df.plot()
+                  plt.legend(loc='best')
+                </pre>
+              </div>
+              <div v-if="Cleaning">
+                <pre>
+                  import matplotlib.pyplot as plt
+                  import numpy as np 
+                  import pandas as pd
+                  df = pd.DataFrame(
+                    np.random.randn(1000, 4), index=ts.index, columns=["A", "B", "C", "D"]
+                    )
+                  df = df.cumsum()
+                  plt.figure()
+                  df.plot()
+                  plt.legend(loc='best')
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </body>
+
+  <head>
+    <style>
+      .dis-b{
+        display: block!important;
+      }
+      .inline{
+        display: inline-block!important;
+      }
+    .hooper-list {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+    .hooper-track {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    } 
+    .shadow{
+      box-shadow: 0 0 11px rgba(33,33,33,.2);
+    }
+    .box:hover {
+      color: #42a5f5;
+      box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    .cursor-pointer {cursor: pointer;}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </head>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        postData: null,
+        Data: true,
+        Intro: false,
+        Visualization: false,
+        Cleaning: false 
+      },
+      created() {
+        axios
+        .get( '../docs/posts.json').then(item => {
+          this.initializing = false
+          const values = Object.values(item.data)
+          values.map(res => {
+            if((typeof res.tech) === 'string') {
+              res.tech = res.tech.split()
+            } 
+          })
+          this.postData = values 
+        })
+      },
+      methods: {
+        changeTab: function (value) {
+          this.Data = false
+          this.Intro = false
+          this.Visualization = false
+          this.Cleaning = false
+          if (value == 'Data') this.Data = true
+          if (value == "Intro") this.Intro = true
+          if (value == "Visualization") this.Visualization = true
+          if (value == "Cleaning") this.Cleaning = true
+        }
+      }
+    })
+  </script>
+</html>
