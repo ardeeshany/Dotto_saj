@@ -2040,10 +2040,17 @@ padding-bottom: 0px;
                 <div class="card-body rounded border-0">
                   <h5 class="card-title">{{item.title}}</h5>
                   <span class="text-muted">
-                    <em> {{item.date}} </em> 
-                    <i v-if='showR(item.tech)' class="fab fa-r-project"></i>
-                    <i v-if='showPython(item.tech)' class="fab fa-python"></i>  
-                    <i v-if="showSql(item.tech)" class="fas fa-database"></i>        
+                    <div class="row">
+                      <div class="col-8">
+                        <em> {{item.date}} </em> 
+                        <i v-if='showR(item.tech)' class="fab fa-r-project"></i>
+                        <i v-if='showPython(item.tech)' class="fab fa-python"></i>  
+                        <i v-if="showSql(item.tech)" class="fas fa-database"></i>    
+                      </div>
+                      <div class="col-4" style="font-size: 13px;">
+                        {{item.author[0].name}}
+                      </div>
+                    </div>
                   </span>
             
                   <div>
@@ -2208,7 +2215,7 @@ padding-bottom: 0px;
 <div class="container">
 <ul class="foote_bottom_ul_amrc">
 <li><a href="/">Home</a></li>
-<li><a href="#">About</a></li>
+<li><a href="about.html">About</a></li>
 </ul>
 <!--foote_bottom_ul_amrc ends here-->
 <p class="text-center">Copyright @2021 | Designed With by Data Motto</p>

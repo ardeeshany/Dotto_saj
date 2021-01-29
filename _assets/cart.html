@@ -32,10 +32,17 @@
                 <div class="card-body rounded border-0">
                   <h5 class="card-title">{{item.title}}</h5>
                   <span class="text-muted">
-                    <em> {{item.date}} </em> 
-                    <i v-if='showR(item.tech)' class="fab fa-r-project"></i>
-                    <i v-if='showPython(item.tech)' class="fab fa-python"></i>  
-                    <i v-if="showSql(item.tech)" class="fas fa-database"></i>        
+                    <div class="row">
+                      <div class="col-8">
+                        <em> {{item.date}} </em> 
+                        <i v-if='showR(item.tech)' class="fab fa-r-project"></i>
+                        <i v-if='showPython(item.tech)' class="fab fa-python"></i>  
+                        <i v-if="showSql(item.tech)" class="fas fa-database"></i>    
+                      </div>
+                      <div class="col-4" style="font-size: 13px;">
+                        {{item.author[0].name}}
+                      </div>
+                    </div>
                   </span>
             
                   <div>
