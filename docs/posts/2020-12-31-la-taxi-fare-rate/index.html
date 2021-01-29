@@ -102,20 +102,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="A short description of the post."/>
 <meta property="og:url" content="https://www.datamotto.com/posts/2020-12-31-la-taxi-fare-rate/"/>
-<meta property="og:image" content="https://www.datamotto.com/posts/2020-12-31-la-taxi-fare-rate/la-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png"/>
-<meta property="og:image:width" content="3900"/>
-<meta property="og:image:height" content="2400"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Motto"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="Data Motto: LA Taxi fare rate"/>
 <meta property="twitter:description" content="A short description of the post."/>
 <meta property="twitter:url" content="https://www.datamotto.com/posts/2020-12-31-la-taxi-fare-rate/"/>
-<meta property="twitter:image" content="https://www.datamotto.com/posts/2020-12-31-la-taxi-fare-rate/la-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png"/>
-<meta property="twitter:image:width" content="3900"/>
-<meta property="twitter:image:height" content="2400"/>
 <meta property="twitter:site" content="@DataMotto"/>
 <meta property="twitter:creator" content="@DataMotto"/>
 
@@ -466,15 +460,8 @@ d-title {
   top: 0;
 }
 
-/* adjust viewport for navbar height */
-/* helps vertically center bootstrap (non-distill) content */
-.min-vh-100 {
-  min-height: calc(100vh - 100px) !important;
-}
-
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1774,234 +1761,20 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-<script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-WZMEMQM0Y2"></script>
-<script type="text/javascript" cookie-consent="tracking">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZMEMQM0Y2"></script>
+<script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-WZMEMQM0Y2');
 </script>
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:300, 300i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
-
-body {
-  /*font-family: "Lato";*/
-  font-family: "Noto Serif JP";
-  /*color: #1f1f1f;*/
-  color: #404040;
-  font-size: 16px;
+.title{
+  padding-top: 0px!important;
+  margin-top: 21px!important;
 }
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Serif JP';
-  /*font-family: 'Source Code Pro', monospace;*/
-  letter-spacing: 2px;
-  line-height: 2rem; /* increases, so wrapping headers don't overlap */
-  color: #007cab;
-  font-weight: 300;
-}
-
-d-title {
-  padding-top: 13rem; /*so that navbar doesn't overlap fixed title */
-}
-
-d-title h1,
-d-article h2 {
-	font-weight: 300;
-}
-
-
-/* --------------Navbar-------------------- */
-
-
-/* background-image for fade-to-white color of navbar */
-.distill-site-header{
-  padding: 0px 0px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255,255,255,0));
-  background-color: transparent;
-  font-size: 16px;
-  font-family: 'Source Code Pro', monospace;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #044f6b;
-}
-
-.distill-site-header .logo img{
-  max-height: 40px; /* Makes logo bigger, default was 20px */
-  padding: -2px;
-  margin-top: 5px;
-}
-
-/* dropdown navbar color on mobile */
-
-@media screen and (max-width: 768px){
-  .distill-site-header.responsive {
-      background: rgba(255,255,255,0.99);
-  }
-}
-
-
-/* Navbar Links with Animated Hover */
-
-
-.distill-site-header a { /* A normal link in navbar */
-  color: #1f1f1f;
-  display: inline-block;  /* This line and line below is so pseudo-element will work later */
-  position: relative;
-  text-decoration: none;
-  padding-left: 0px; /* overrides default so animation looks Ok */
-  padding-right: 0px; /* overrides default so animation looks Ok */
-  margin: 24px 14px; /* replaces default padding values for margin values */
-}
-
-
-.distill-site-header a:hover { /* (unanimated) hover behavior for navbar links */
-  color: #ca225e;
-  padding-left: 0px; /* overrides default so animation looks Ok */
-  padding-right: 0px; /* overrides default so animation looks Ok */
-  margin: 10px 14px; /* replaces default padding values for margin values */
-}
-
-.distill-site-header a:before { /*Creates pseudoelement line under link */
-  background-color: #787878;
-  content: '';
-  /* height: 1px;*/
-  position: absolute;
-  /* bottom: -1px;
-  /*transition: width 0.3s ease-in-out; /* animate the width */
-  width: 100%;
-}
-
-.distill-site-header a:after{ /*Creates pseudoelement line under link */
-  background-color: #ca225e;
-  content: '';
-  /* height: 1px;*/
-  position: absolute;
-  /* bottom: -1px;
-  /*transition: width 0.3s ease-in-out; /* animate the width */
-  width: 100%;
-}
-
-
-.distill-site-header a:hover:before {
-  width: 0; /* Shrinks width of pseudoelement to 0 when hovered */
-}
-
-/* Makes sure animation does NOT apply to Title or Logo links (or toggle on mobile) */
-
-.distill-site-header a.title:before, .distill-site-nav a.logo:before, a.nav-toggle:before {
-  display: none;
-}
-
-.distill-site-header a.title, .distill-site-nav a.logo {
-  padding: 10px 0px;
-  margin: 10px 14px;
-}
-
-
-/* No navbar links on mobile except title and nav-toggle */
-
-@media screen and (max-width: 768px) {
-  .distill-site-header a, .distill-site-header .nav-dropdown {
-    display: none;
-  }
-
-  .distill-site-header a.title, .distill-site-header a.nav-toggle {
-    display: inline-block;
-    padding: 10px 0px;
-    margin: 10px 14px;
-  }
-}
-
-/* -------------Appendix---------------- */
-
-d-appendix {
-  background-color: #fdf7f9;
-  border-top: none !important;
-  color: #1a162d !important;
-}
-
-/* -------------Footer------------------*/
-
-.distill-site-footer {
-  color: #7e7b88;
-  background-color: #ca225e3d;
-  margin-top: 0px;
-  padding: 50px 20px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 12px;
-
-}
-
-d-byline div.byline.grid div p,
-d-byline,
-d-byline p,
-p.author,
-p.affiliation,
-d-byline h3,
-.d-toc,
-.d-toc-header,
-.d-toc ul,
-d-appendix p {
-	font-size: 0.9rem;
-}
-
-d-appendix h3 + * {
-	margin-top: 1.5em !important;
-}
-
-/*----- COLORED LIST BULLET----*/
-
-d-article ul {
-  list-style: none; /* Remove default bullets */
-}
-
-d-article ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #94a2af; /* Change the color */
-  font-weight: normal; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1.5em; /* Also needed for space (tweak if needed) */
-  margin-left: -1.5em; /* Also needed for space (tweak if needed) */
-}
-
-d-article ul > li > p {
-  display: inline; /* to have content show up next to bullet */
-  line-height: .2em;
-}
-
-d-article ul > li { /*to add back in space between bullet items that I took away by making p display inline */
-  margin-top: .2em;
-  margin-bottom: .2em;
-}
-
-.d-toc ul li::before {
-  content: " ";  /* Remove toc bullets */
-}
-
-d-footnote {
-    margin-left: -30px;
-}
-
-
-/*----- Appendix ----*/
-
-d-appendix {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-/*----- footer ----*/
-
-.distill-site-footer {
-  background-color: white;
+.logo{
+  display: none!important
 }
 
 </style>
@@ -2015,7 +1788,7 @@ d-appendix {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"LA Taxi fare rate","description":"A short description of the post.","authors":[{"author":"Nora Jones","authorURL":"https://example.com/norajones","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-12T00:00:00.000+00:00","citationText":"Jones, 2021"}
+{"title":"LA Taxi fare rate","description":"A short description of the post.","authors":[{"author":"Nora Jones","authorURL":"https://example.com/norajones","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-12T00:00:00.000+03:30","citationText":"Jones, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

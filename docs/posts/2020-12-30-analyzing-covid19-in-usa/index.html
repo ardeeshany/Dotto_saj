@@ -460,15 +460,8 @@ d-title {
   top: 0;
 }
 
-/* adjust viewport for navbar height */
-/* helps vertically center bootstrap (non-distill) content */
-.min-vh-100 {
-  min-height: calc(100vh - 100px) !important;
-}
-
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1768,18 +1761,22 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-<script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-WZMEMQM0Y2"></script>
-<script type="text/javascript" cookie-consent="tracking">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZMEMQM0Y2"></script>
+<script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-WZMEMQM0Y2');
 </script>
 <style type="text/css">
-.title{   
+.title{
   padding-top: 0px!important;
   margin-top: 21px!important;
 }
+.logo{
+  display: none!important
+}
+
 </style>
 <!--/radix_placeholder_site_in_header-->
 
@@ -1791,11 +1788,36 @@ gtag('config', 'G-WZMEMQM0Y2');
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Cvovid 19 Analysis","description":"A short description of the post.","authors":[{"author":"Nora Jones","authorURL":"https://example.com/norajones","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-12T00:00:00.000+00:00","citationText":"Jones, 2021"}
+{"title":"Cvovid 19 Analysis","description":"A short description of the post.","authors":[{"author":"Nora Jones","authorURL":"https://example.com/norajones","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-12T00:00:00.000+03:30","citationText":"Jones, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a class="logo" href="https://www.datamotto.com">
+<img src="../../images/logo.gif" alt="Logo"/>
+</a>
+<a href="../../index.html" class="title">Data Motto</a>
+</div>
+<div class="nav-right">
+<a href="../../about.html">The Whole game!</a>
+<a href="../../R.html">R</a>
+<a href="../../Python.html">Python</a>
+<a href="https://datamotto.slack.com">
+<i class="fa fa-slack fa-1x" aria-hidden="true"></i>
+</a>
+<a href="https://github.com/ardeeshany/DataMotto">
+<i class="fa fa-github fa-1x" aria-hidden="true"></i>
+</a>
+<a href="../../index.xml">
+<i class="fa fa-rss fa-1x" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->

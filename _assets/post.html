@@ -3,7 +3,7 @@
     <div id="app" style="padding-top: 100px;">  
       <div class="container" style="max-width: 1285px;">
         <div class="row">
-          <div class="col-4 mt-4">
+          <div class="col-2 mt-4">
             <div class="list-group">
               <a v-for="(item, index) in postData" :key="index" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -13,31 +13,11 @@
               </a>
             </div>
           </div>
-          <div class="col-8">
-              <div class="row">
-                <div class="col-6">
-                  <h3 class="text-info">New York Taxi fare rate</h3>  
-                  <p class="text-muted mb-1">A short description of the post.</p>
-                  <p class="text-muted"><small>Author: Nora Jones, Jan 03 2021</small></p>
-                </div>
-                <div class="col-6 mt-4">
-                  <div class="mb-2">
-                    <i class="fab text-muted fa-python mr-1"></i> 
-                    Python
-                  </div>
-                  <div class="mb-2">
-                    <i class="fas fa-box-open text-muted mr-1"></i>
-                    Matplotlib
-                  </div>
-                  <div>
-                    <i class="fas fa-adjust text-muted mr-1"></i>
-                    Visualization
-                  </div>
-                </div>
-              </div>
-            <div class="card col-11 border border-info mb-5">
+          <div class="col-10">
+            <div class="card col-12 border border-info mb-5">
               <div class="card-body p-0 mx-auto">
                 <ul class="dis-b hooper-list list-group border-0 list-group-horizontal-lg justify-content-center">
+                  <li v-on:click="changeTab('Info')" :class="Info ? 'shadow text-info' : ''" class="box inline cursor-pointer list-group-item border-0"></i><i class="fas mr-2 fa-info-circle"></i>Info</li>
                   <li v-on:click="changeTab('Data')" :class="Data ? 'shadow text-danger' : ''" class="box inline cursor-pointer list-group-item border-0"></i><i class="fas mr-2 fa-circle"></i>Data</li>
                   <li v-on:click="changeTab('Intro')" :class="Intro ? 'shadow text-success' : ''" class="box inline cursor-pointer list-group-item border-0"><i class="fas mr-2 fa-circle"></i>Intro</li>
                   <li v-on:click="changeTab('Cleaning')" :class="Cleaning ? 'shadow text-warning' : ''" class="box inline cursor-pointer list-group-item border-0"><i class="fas mr-2 fa-circle"></i>Visualization</li>
@@ -45,6 +25,29 @@
                 </ul>
               </div>
               <hr class="mt-0 mb-2 text-muted">
+              <div v-if="Info">
+                <div class="row text-center">
+                  <div class="col-6">
+                    <h3 class="text-info">New York Taxi fare rate</h3>  
+                    <p class="text-muted mb-1">A short description of the post.</p>
+                    <p class="text-muted"><small>Author: Nora Jones, Jan 03 2021</small></p>
+                  </div>
+                  <div class="col-6 mt-4">
+                    <div class="mb-2">
+                      <i class="fab text-muted fa-python mr-1"></i> 
+                      Python
+                    </div>
+                    <div class="mb-2">
+                      <i class="fas fa-box-open text-muted mr-1"></i>
+                      Matplotlib
+                    </div>
+                    <div>
+                      <i class="fas fa-adjust text-muted mr-1"></i>
+                      Visualization
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div v-if="Data">
                 <pre>
                   import matplotlib.pyplot as plt
@@ -142,7 +145,8 @@
       el: '#app',
       data: {
         postData: null,
-        Data: true,
+        Data: false,
+        Info: true,
         Intro: false,
         Visualization: false,
         Cleaning: false 
@@ -164,9 +168,11 @@
         changeTab: function (value) {
           this.Data = false
           this.Intro = false
+          this.Info = false
           this.Visualization = false
           this.Cleaning = false
           if (value == 'Data') this.Data = true
+          if (value == 'Info') this.Info = true
           if (value == "Intro") this.Intro = true
           if (value == "Visualization") this.Visualization = true
           if (value == "Cleaning") this.Cleaning = true

@@ -1,66 +1,66 @@
 {
  "analyzing-covid19-in-usa": {
- "title": [ "Cvovid 19 Analysis" ],
-"description": [ "A short description of the post.\n" ],
+ "title": "Cvovid 19 Analysis",
+"description": "A short description of the post.\n",
 "author": [
  {
- "name": [ "Nora Jones" ],
-"url": [ "https://example.com/norajones" ] 
+ "name": "Nora Jones",
+"url": "https://example.com/norajones" 
 } 
 ],
-"date": [ "2021-01-12" ],
-"tech": [ "Sql" ],
-"packages": [ "Matplotlib" ],
-"categories": [ "Visualization" ],
+"date": "2021-01-12",
+"tech": "Sql",
+"packages": "Matplotlib",
+"categories": "Visualization",
 "output": {
  "distill::distill_article": {
- "self_contained": [ false ] 
+ "self_contained": false 
 } 
 },
-"preview": [ "https://bookdown.org/kdonovan125/ibis_data_analysis_r4/_main_files/figure-html/ggplot_ex_6-1.png" ],
-"cover_image_url": [ "https://bookdown.org/kdonovan125/ibis_data_analysis_r4/_main_files/figure-html/ggplot_ex_6-1.png" ] 
+"preview": "https://bookdown.org/kdonovan125/ibis_data_analysis_r4/_main_files/figure-html/ggplot_ex_6-1.png",
+"cover_image_url": "https://bookdown.org/kdonovan125/ibis_data_analysis_r4/_main_files/figure-html/ggplot_ex_6-1.png" 
 },
 "new-york-taxi-fare-rate": {
- "title": [ "New York Taxi fare rate" ],
-"description": [ "A short description of the post.\n" ],
+ "title": "New York Taxi fare rate",
+"description": "A short description of the post.\n",
 "author": [
  {
- "name": [ "Nora Jones" ],
-"url": [ "https://example.com/norajones" ] 
+ "name": "Nora Jones",
+"url": "https://example.com/norajones" 
 } 
 ],
-"date": [ "2021-01-12" ],
-"slug": [ "post3" ],
+"date": "2021-01-12",
+"slug": "post3",
 "tech": [ "Python", "Sql" ],
-"packages": [ "Matplotlib" ],
-"categories": [ "Visualization" ],
+"packages": "Matplotlib",
+"categories": "Visualization",
 "output": {
  "distill::distill_article": {
- "self_contained": [ false ] 
+ "self_contained": false 
 } 
 },
-"preview": [ "new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" ],
-"cover_image_url": [ "https://datamotto.com/posts/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" ] 
+"preview": "new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png",
+"cover_image_url": "https://datamotto.com/posts/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" 
 },
 "la-taxi-fare-rate": {
- "title": [ "LA Taxi fare rate" ],
-"description": [ "A short description of the post.\n" ],
+ "title": "LA Taxi fare rate",
+"description": "A short description of the post.\n",
 "author": [
  {
- "name": [ "Nora Jones" ],
-"url": [ "https://example.com/norajones" ] 
+ "name": "Nora Jones",
+"url": "https://example.com/norajones" 
 } 
 ],
-"date": [ "2021-01-12" ],
-"slug": [ "post3" ],
+"date": "2021-01-12",
+"slug": "post3",
 "tech": [ "Python", "Sql" ],
-"packages": [ "Matplotlib" ],
-"categories": [ "Visualization" ],
+"packages": "Matplotlib",
+"categories": "Visualization",
 "output": {
  "distill::distill_article": {
- "self_contained": [ false ] 
+ "self_contained": false 
 } 
 },
-"cover_image_url": [ null ] 
+"cover_image_url": null 
 } 
 }

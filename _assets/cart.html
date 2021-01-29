@@ -27,27 +27,8 @@
           <div class="row justify-content-center">
             <div v-for="(item, index) in filter" :key="index" class="card-deck col-md-4 p-3 mb-3 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
               <div class="card box cursor-pointer" style="width: 18rem;">
-                <img class="card-img-top" style="height: 176px;" src="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" alt="Card image cap">
-                <div class="card-body rounded border-0">
-                  <h5 class="card-title">{{item.title}}</h5>
-                  <span class="text-muted">
-                    <em> {{item.date}} </em> 
-                    <i v-if='showR(item.tech)' class="fab fa-r-project"></i>
-                    <i v-if='showPython(item.tech)' class="fab fa-python"></i>  
-                    <i v-if="showSql(item.tech)" class="fas fa-database"></i>        
-                  </span>
-            
-                  <div>
-                    <span v-if="item.categories" class="badge card-text badge-info bg-info">{{item.categories}}</span>
-                    <span v-if="item.packages" class="badge card-text badge-info bg-warning">{{item.packages}}</span>
-                  </div>
-                  <p class="card-text">{{item.description}}</p>
-                </div>
-              </div>
-            </div>
-            <div v-for="(item, index) in filter" :key="index" class="card-deck col-md-4 p-3 mb-3 bg-white rounded border-0 bg-white rounded" style="width: 18rem;">
-              <div class="card box cursor-pointer" style="width: 18rem;">
-                <img class="card-img-top" style="height: 176px;" src="https://www.datamotto.com/posts/Python/2020-12-30-new-york-taxi-fare-rate/new-york-taxi-fare-rate_files/figure-html5/unnamed-chunk-4-1.png" alt="Card image cap">
+                <img v-if="item.cover_image_url" class="card-img-top" style="height: 176px;" :src="item.cover_image_url" alt="Card image cap">
+                <img v-else class="card-img-top" style="height: 176px;" src="../images/no-image.png" alt="Card image cap">
                 <div class="card-body rounded border-0">
                   <h5 class="card-title">{{item.title}}</h5>
                   <span class="text-muted">

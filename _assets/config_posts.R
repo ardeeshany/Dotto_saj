@@ -15,6 +15,6 @@ create_posts_json <- function(base_url = "https://datamotto.com") {
     all_metadata[[i]] <- c(all_metadata[[i]], cover_image_url = cover_image_url)
   }
 
-  exportJson <- RJSONIO::toJSON(all_metadata, asIs = T)
+  exportJson <- RJSONIO::toJSON(all_metadata, asIs = FALSE)
   write(exportJson, here::here("posts.json"))
-}
+} 

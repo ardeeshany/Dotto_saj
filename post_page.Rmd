@@ -11,11 +11,12 @@ display: none;
 padding: 0px;
 }
 d-article{
-background: #ffff;
+background: #0f2e3d;
 padding-top: 0px;
 padding-bottom: 0px;
 }
 .shaded {
+    background: #0f2e3d;
     border-top: 0!important;
     border-bottom: 0!important;
 }
